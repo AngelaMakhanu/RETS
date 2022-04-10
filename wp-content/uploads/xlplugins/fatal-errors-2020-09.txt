@@ -1,0 +1,52 @@
+
+Sep 10, 2020 13.17.20: Allowed memory size of 134217728 bytes exhausted (tried to allocate 7463056 bytes)
+
+Sep 10, 2020 13.28.10: Allowed memory size of 134217728 bytes exhausted (tried to allocate 7463056 bytes)
+
+Sep 10, 2020 13.33.53: Allowed memory size of 134217728 bytes exhausted (tried to allocate 7463056 bytes)
+
+Sep 10, 2020 13.46.29: Allowed memory size of 134217728 bytes exhausted (tried to allocate 7463056 bytes)
+
+Sep 10, 2020 13.50.21: Allowed memory size of 134217728 bytes exhausted (tried to allocate 7463056 bytes)
+
+Sep 10, 2020 13.52.39: Allowed memory size of 134217728 bytes exhausted (tried to allocate 7463056 bytes)
+
+Sep 10, 2020 13.57.04: Allowed memory size of 134217728 bytes exhausted (tried to allocate 7463056 bytes)
+
+Sep 10, 2020 14.37.56: Allowed memory size of 134217728 bytes exhausted (tried to allocate 7463128 bytes)
+
+Sep 10, 2020 15.59.00: Allowed memory size of 134217728 bytes exhausted (tried to allocate 7463128 bytes)
+
+Sep 10, 2020 15.59.59: Allowed memory size of 134217728 bytes exhausted (tried to allocate 7463128 bytes)
+
+Sep 10, 2020 17.31.38: Allowed memory size of 134217728 bytes exhausted (tried to allocate 7463128 bytes)
+
+Sep 10, 2020 17.38.11: Allowed memory size of 134217728 bytes exhausted (tried to allocate 7463128 bytes)
+
+Sep 10, 2020 17.43.43: Allowed memory size of 134217728 bytes exhausted (tried to allocate 7463128 bytes)
+
+Sep 11, 2020 05.03.29: Allowed memory size of 134217728 bytes exhausted (tried to allocate 7463128 bytes)
+
+Sep 11, 2020 05.08.42: Allowed memory size of 134217728 bytes exhausted (tried to allocate 7463128 bytes)
+
+Sep 15, 2020 07.26.09: Allowed memory size of 134217728 bytes exhausted (tried to allocate 8036272 bytes)
+
+Sep 15, 2020 07.27.53: Allowed memory size of 134217728 bytes exhausted (tried to allocate 8036272 bytes)
+
+Sep 15, 2020 07.30.54: Allowed memory size of 134217728 bytes exhausted (tried to allocate 8036272 bytes)
+
+Sep 15, 2020 07.48.02: Allowed memory size of 134217728 bytes exhausted (tried to allocate 8045752 bytes)
+
+Sep 23, 2020 14.21.22: Uncaught Error: Class 'Elementor\Core\Settings\Manager' not found in /home/research/public_html/wp-content/plugins/elementor/includes/plugin.php:575
+Stack trace:
+#0 /home/research/public_html/wp-content/plugins/elementor/includes/plugin.php(514): Elementor\Plugin->init_components()
+#1 /home/research/public_html/wp-includes/class-wp-hook.php(287): Elementor\Plugin->init('')
+#2 /home/research/public_html/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#3 /home/research/public_html/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#4 /home/research/public_html/wp-settings.php(546): do_action('init')
+#5 /home/research/public_html/wp-config.php(93): require_once('/home/research/...')
+#6 /home/research/public_html/wp-load.php(37): require_once('/home/research/...')
+#7 /home/research/public_html/wp-blog-header.php(13): require_once('/home/research/...')
+#8 /home/research/public_html/index.php(17): require('/home/research/...')
+#9 {main}
+  thrown

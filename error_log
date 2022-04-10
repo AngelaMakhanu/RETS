@@ -1,0 +1,48 @@
+				rh7x_options a
+				INNER JOIN rh7x_options b
+					ON b.option_name = CONCAT( '_transient_timeout_', SUBSTRING( a.option_name, 12 ) )
+					AND b.option_value < 1642551385
+			WHERE
+				a.option_name LIKE '\_transient\_tribe\_%'
+				AND a.option_name NOT LIKE '\_transient\_timeout\_tribe\_%'
+		 made by shutdown_action_hook, do_action('shutdown'), WP_Hook->do_action, WP_Hook->apply_filters, Tribe__Cache->maybe_delete_expired_transients, Tribe__Cache->delete_expired_transients
+[21-Jan-2022 09:04:38 UTC] PHP Warning:  require_once(/home/research/public_html/wp-content/plugins/astra-sites/inc/classes/class-astra-sites-importer-log.php): failed to open stream: No such file or directory in /home/research/public_html/wp-content/plugins/astra-sites/inc/classes/class-astra-sites-importer.php on line 50
+[21-Jan-2022 09:04:38 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/research/public_html/wp-content/plugins/astra-sites/inc/classes/class-astra-sites-importer-log.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/research/public_html/wp-content/plugins/astra-sites/inc/classes/class-astra-sites-importer.php on line 50
+[20-Mar-2022 22:36:49 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method WP_Error::get_data() in /home/research/public_html/wp-content/themes/astra/inc/compatibility/class-astra-elementor.php:300
+Stack trace:
+#0 /home/research/public_html/wp-includes/class-wp-hook.php(307): Elementor\Astra_Elementor->elementor_add_theme_colors(Object(WP_Error), Array, Object(WP_REST_Request))
+#1 /home/research/public_html/wp-includes/plugin.php(189): WP_Hook->apply_filters(Object(WP_Error), Array)
+#2 /home/research/public_html/wp-includes/rest-api/class-wp-rest-server.php(1166): apply_filters('rest_request_af...', Object(WP_Error), Array, Object(WP_REST_Request))
+#3 /home/research/public_html/wp-includes/rest-api/class-wp-rest-server.php(988): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/elementor/v1/g...', Array, Object(WP_Error))
+#4 /home/research/public_html/wp-includes/rest-api/class-wp-rest-server.php(414): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#5 /home/research/public_html/wp-includes/rest-api.php(386): WP_REST_Server->ser in /home/research/public_html/wp-content/themes/astra/inc/compatibility/class-astra-elementor.php on line 300
+[22-Mar-2022 13:14:42 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method WP_Error::get_data() in /home/research/public_html/wp-content/themes/astra/inc/compatibility/class-astra-elementor.php:300
+Stack trace:
+#0 /home/research/public_html/wp-includes/class-wp-hook.php(307): Elementor\Astra_Elementor->elementor_add_theme_colors(Object(WP_Error), Array, Object(WP_REST_Request))
+#1 /home/research/public_html/wp-includes/plugin.php(189): WP_Hook->apply_filters(Object(WP_Error), Array)
+#2 /home/research/public_html/wp-includes/rest-api/class-wp-rest-server.php(1166): apply_filters('rest_request_af...', Object(WP_Error), Array, Object(WP_REST_Request))
+#3 /home/research/public_html/wp-includes/rest-api/class-wp-rest-server.php(988): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/elementor/v1/g...', Array, Object(WP_Error))
+#4 /home/research/public_html/wp-includes/rest-api/class-wp-rest-server.php(414): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#5 /home/research/public_html/wp-includes/rest-api.php(386): WP_REST_Server->ser in /home/research/public_html/wp-content/themes/astra/inc/compatibility/class-astra-elementor.php on line 300
+[23-Mar-2022 13:30:08 UTC] id was called incorrectly. Order properties should not be accessed directly. Backtrace: require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), do_action('template_redirect'), WP_Hook->do_action, WP_Hook->apply_filters, WC_AJAX::do_wc_ajax, do_action('wc_ajax_checkout'), WP_Hook->do_action, WP_Hook->apply_filters, WC_AJAX::checkout, WC_Checkout->process_checkout, WC_Checkout->process_order_payment, WC_Gateway_Ipay->process_payment, WC_Abstract_Legacy_Order->__get, wc_doing_it_wrong. This message was added in version 3.0.
+[23-Mar-2022 13:30:08 UTC] order_key was called incorrectly. Order properties should not be accessed directly. Backtrace: require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), do_action('template_redirect'), WP_Hook->do_action, WP_Hook->apply_filters, WC_AJAX::do_wc_ajax, do_action('wc_ajax_checkout'), WP_Hook->do_action, WP_Hook->apply_filters, WC_AJAX::checkout, WC_Checkout->process_checkout, WC_Checkout->process_order_payment, WC_Gateway_Ipay->process_payment, WC_Abstract_Legacy_Order->__get, wc_doing_it_wrong. This message was added in version 3.0.
+[23-Mar-2022 13:35:17 UTC] id was called incorrectly. Order properties should not be accessed directly. Backtrace: require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), do_action('template_redirect'), WP_Hook->do_action, WP_Hook->apply_filters, WC_AJAX::do_wc_ajax, do_action('wc_ajax_checkout'), WP_Hook->do_action, WP_Hook->apply_filters, WC_AJAX::checkout, WC_Checkout->process_checkout, WC_Checkout->process_order_payment, WC_Gateway_Ipay->process_payment, WC_Abstract_Legacy_Order->__get, wc_doing_it_wrong. This message was added in version 3.0.
+[23-Mar-2022 13:35:17 UTC] order_key was called incorrectly. Order properties should not be accessed directly. Backtrace: require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), do_action('template_redirect'), WP_Hook->do_action, WP_Hook->apply_filters, WC_AJAX::do_wc_ajax, do_action('wc_ajax_checkout'), WP_Hook->do_action, WP_Hook->apply_filters, WC_AJAX::checkout, WC_Checkout->process_checkout, WC_Checkout->process_order_payment, WC_Gateway_Ipay->process_payment, WC_Abstract_Legacy_Order->__get, wc_doing_it_wrong. This message was added in version 3.0.
+[02-Apr-2022 05:03:20 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method WP_Error::get_data() in /home/research/public_html/wp-content/themes/astra/inc/compatibility/class-astra-elementor.php:303
+Stack trace:
+#0 /home/research/public_html/wp-includes/class-wp-hook.php(307): Elementor\Astra_Elementor->elementor_add_theme_colors(Object(WP_Error), Array, Object(WP_REST_Request))
+#1 /home/research/public_html/wp-includes/plugin.php(189): WP_Hook->apply_filters(Object(WP_Error), Array)
+#2 /home/research/public_html/wp-includes/rest-api/class-wp-rest-server.php(1166): apply_filters('rest_request_af...', Object(WP_Error), Array, Object(WP_REST_Request))
+#3 /home/research/public_html/wp-includes/rest-api/class-wp-rest-server.php(988): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/elementor/v1/g...', Array, Object(WP_Error))
+#4 /home/research/public_html/wp-includes/rest-api/class-wp-rest-server.php(414): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#5 /home/research/public_html/wp-includes/rest-api.php(386): WP_REST_Server->ser in /home/research/public_html/wp-content/themes/astra/inc/compatibility/class-astra-elementor.php on line 303
+[02-Apr-2022 06:42:42 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method WP_Error::get_data() in /home/research/public_html/wp-content/themes/astra/inc/compatibility/class-astra-elementor.php:303
+Stack trace:
+#0 /home/research/public_html/wp-includes/class-wp-hook.php(307): Elementor\Astra_Elementor->elementor_add_theme_colors(Object(WP_Error), Array, Object(WP_REST_Request))
+#1 /home/research/public_html/wp-includes/plugin.php(189): WP_Hook->apply_filters(Object(WP_Error), Array)
+#2 /home/research/public_html/wp-includes/rest-api/class-wp-rest-server.php(1166): apply_filters('rest_request_af...', Object(WP_Error), Array, Object(WP_REST_Request))
+#3 /home/research/public_html/wp-includes/rest-api/class-wp-rest-server.php(988): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/elementor/v1/g...', Array, Object(WP_Error))
+#4 /home/research/public_html/wp-includes/rest-api/class-wp-rest-server.php(414): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#5 /home/research/public_html/wp-includes/rest-api.php(386): WP_REST_Server->ser in /home/research/public_html/wp-content/themes/astra/inc/compatibility/class-astra-elementor.php on line 303
+[10-Apr-2022 08:23:25 UTC] id was called incorrectly. Order properties should not be accessed directly. Backtrace: require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), do_action('template_redirect'), WP_Hook->do_action, WP_Hook->apply_filters, WC_AJAX::do_wc_ajax, do_action('wc_ajax_checkout'), WP_Hook->do_action, WP_Hook->apply_filters, WC_AJAX::checkout, WC_Checkout->process_checkout, WC_Checkout->process_order_payment, WC_Gateway_Ipay->process_payment, WC_Abstract_Legacy_Order->__get, wc_doing_it_wrong. This message was added in version 3.0.
+[10-Apr-2022 08:23:25 UTC] order_key was called incorrectly. Order properties should not be accessed directly. Backtrace: require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), do_action('template_redirect'), WP_Hook->do_action, WP_Hook->apply_filters, WC_AJAX::do_wc_ajax, do_action('wc_ajax_checkout'), WP_Hook->do_action, WP_Hook->apply_filters, WC_AJAX::checkout, WC_Checkout->process_checkout, WC_Checkout->process_order_payment, WC_Gateway_Ipay->process_payment, WC_Abstract_Legacy_Order->__get, wc_doing_it_wrong. This message was added in version 3.0.

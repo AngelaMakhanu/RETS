@@ -1,0 +1,2554 @@
+/********** GRID **********/
+
+.wpc-2, .wpc-3, .wpc-4, .wpc-6, .wpc-8, .wpc-10 {
+    float: left;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin-right: 20px;
+}
+
+.wpc-2 {
+    width: calc(20% - 20px);
+}
+
+.wpc-3 {
+    width: calc(25% - 20px);
+}
+
+.wpc-4 {
+    width: calc(33.33% - 20px);
+}
+
+.wpc-6 {
+    width: calc(50% - 20px);
+}
+
+.wpc-8 {
+    width: calc(66.66% - 20px);
+}
+
+.wpc-10 {
+    width: calc(80% - 20px);
+}
+
+@media screen and (max-width: 980px) {
+    .wpc-2, .wpc-2:last-of-type, .wpc-3, .wpc-3:last-of-type, .wpc-4, .wpc-4:last-of-type, .wpc-6, .wpc-6:last-of-type, .wpc-8, .wpc-8:last-of-type {
+        float: none;
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+.wpc-row>div:last-of-type {
+    overflow: hidden;
+    margin-right: 0;
+    width: auto;
+    float: none;
+}
+
+/********** TOOLBAR **********/
+
+.wpc-range-option {
+    overflow: hidden;
+}
+
+.wpc-range-input {
+    float: right !important;
+    padding: 5px 5px !important;
+    width: 26% !important;
+}
+
+.wpc-range {
+    width: 66% !important;
+    background: #dedede;
+    height: 4px;
+}
+
+#wpc-fe-setting-icon {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 9999999;
+    background: rgb(18 199 149);
+    color: #fff;
+    padding: 20px;
+    border-radius: 100%;
+    cursor: pointer;
+    line-height: 1em;
+    box-shadow: rgb(0 0 0 / 30%) 3px 3px 10px;
+}
+
+.wpc-fe-options-wrapper {
+    position: fixed;
+    height: 100%;
+    z-index: 999999;
+    width: 438px;
+    left: -438px;
+    box-shadow: 3px 0px 15px rgba(0, 0, 0, 0.1);
+    background-color: #f5f5f5;
+}
+
+.wpc-arrow-up {
+    background: url('../images/arrow-up.png');
+    background-size: 18px;
+    height: 18px;
+    display: inline-block;
+    float: right;
+    width: 28px;
+    background-repeat: no-repeat;
+    clear: right;
+    margin-top: 7px;
+}   
+
+.wpc-arrow-down {
+    background: url('../images/arrow-down.png');
+    background-size: 18px;
+    height: 18px;
+    display: inline-block;
+    float: right;
+    width: 28px;
+    background-repeat: no-repeat;
+    clear: right;
+    margin-top: 7px;
+}
+
+.wpc-accordion-option-header {
+    background: #5b296a;
+    padding: 20px 10px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 18px;
+    margin: 0;
+}
+
+.wpc-spacing-wrapper {
+    padding: 5px;
+    display: inline-block;
+    width: calc(25% - 4px);
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.wpc-spacing-wrapper label {
+    text-align: center;
+    display: block;
+    margin-top: 5px;
+}
+
+.wpc-spacing-input {
+    width: 100%;
+}
+
+#wpc-ajax-save {
+    line-height: 1em;
+    display: inline-block;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    background: #12ad80;
+    color: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+}
+
+/********** TABS **********/
+
+.wpc-tab {
+    display: inline-block;
+    padding: 7px 10px;
+    font-size: 14px;
+    border: 1px solid #d3d3d3;
+    border-bottom: 0;
+    margin-right: 10px;
+    background-color: #f5f5f5;
+    color: #444;
+    text-decoration: none !important;
+}
+
+.wpc-tab:first-of-type {
+    margin-left: 10px;
+}
+
+.wpc-tab-active {
+    position: relative;
+    top: 1px;
+    padding: 8px 10px 7px;
+    background-color: #fff;
+}
+
+.wpc-tab-content {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #c3c4c7;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.wpc-tab-content .single-quiz-results-wrapper {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+@media screen and (max-width: 667px) {
+    .wpc-tab {
+        display: block;
+        margin: 0 0 -1px;
+        border-bottom: 1px solid #d3d3d3;
+    }
+    .wpc-tab-active {
+        top: 0;
+        padding: 7px 10px;
+    }
+    .wpc-tab:first-of-type {
+        margin: 0 0 -1px;
+    }
+    table.dataTable tbody td, table.dataTable tfoot th, table.dataTable thead th {
+        padding: 4px 8px;
+        font-size: 12px;
+        line-height: 1.8em;
+    }
+}
+
+.wpc-tab-content input[type="search"] {
+    border: 1px solid #d3d3d3;
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: #444;
+}
+
+.wpc-tab-content .paginate_button.disabled {
+    opacity: 0.5;
+    border: 0 !important;
+    background: none !important;
+}
+
+.wpc-tab-content .paginate_button.disabled:hover {
+    background: none !important;
+}
+
+.wpc-tab-content .dataTables_filter {
+    margin-bottom: 20px;
+}
+
+.wpc-tab-content .odd {
+    background-color: #f5f5f5;
+}
+
+/********** LIGHTBOX **********/
+
+.wpc-lightbox-header {
+    padding: 20px;
+    border-bottom: 1px solid #d3d3d3;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.wpc-lightbox-close {
+    position: absolute;
+    right: 5px;
+    cursor: pointer;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    float: right;
+    width: 26px;
+    height: 26px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.wpc-lightbox-close-wrapper {
+    position: relative;
+}
+
+.wpc-lightbox-wrapper, .wpc-award-lightbox-wrapper {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+}
+
+.wpc-lightbox-wrapper {
+    z-index: 999999;
+}
+
+.wpc-award-lightbox-wrapper {
+    z-index: 999998;
+}
+
+.wpc-award-lightbox-content {
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.wpc-lightbox-content-wrapper {
+    position: relative;
+}
+
+.wpc-lightbox-content {
+    padding: 40px;
+}
+
+.wpc-lightbox, .wpc-award-lightbox {
+    position: relative;
+    overflow-y: auto;
+    background-color: #fff;
+    margin: 60px auto 0;
+    width: 80%;
+    max-width: 510px;
+    max-height: 432px;
+    border: 1px solid #d3d3d3;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 997px) {
+    .wpc-badge-lightbox, .wpc-award-lightbox {
+        max-height: 340px;
+        max-width: 288px;
+    }
+}
+
+.course-container .wpc-video-wrapper {
+    margin: -20px -20px 0;
+}
+
+.wpc-setting {
+    padding: 10px 0;
+}
+
+.wpc-comments-wrapper {
+    margin-top: 60px;
+}
+
+.wpc-breadcrumb {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.wpc-tab-content-header {
+    padding: 20px;
+    margin: -20px -20px 20px;
+    background: #f5f5f5;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.wpc-nav-tab-wrapper {
+    border-bottom: 0 !important;
+}
+
+.wpc-lesson-excerpt {
+    margin-bottom: 20px;
+}
+
+.wpc-container {
+    overflow: hidden;
+    width: 100%;
+    background-color: #f5f5f5;
+}
+
+.wpc-light-box {
+    background-color: #fff;
+    border: 1px solid #ccd0d4;
+    padding: 20px;
+    overflow: hidden;
+    box-shadow: 3px 3px 3px rgb(0 0 0 / 10%);
+}
+
+.wpc-input {
+    border: 1px solid #d3d3d3 !important;
+    padding: 5px !important;
+    width: auto;
+    display: inline;
+}
+
+.wpc-button {
+    display: inline-block;
+    text-decoration: none !important;
+    background-color: #23d19f;
+    color: #fff;
+    padding: 5px 10px !important;
+    border: 1px solid #12ad80;
+    border-radius: 4px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    font-size: 18px;
+    line-height: unset !important;
+}
+
+.wpc-warning {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.wpc-form-button {
+    font-size: 14px;
+}
+
+.wpc-button a {
+    color: #fff;
+}
+
+.wpc-button:hover {
+    color: #fff;
+    background-color: #12ad80;
+    cursor: pointer;
+}
+
+.wpc-button.active {
+    background-color: #009ee5;
+    border-color: #027fb7;
+}
+
+.wpc-button-alt {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #009ee5;
+    border: 1px solid #036d9c;
+}
+
+.wpc-button-alt:hover {
+    background-color: #036d9c;
+}
+
+.wpc-button-alt-2 {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #e25b4f;
+    border: 1px solid #af473e;
+}
+
+.wpc-button-alt-2:hover {
+    background-color: #af473e;
+}
+
+.wpc-row {
+    margin: auto;
+    overflow: hidden;
+}
+
+#wpc-last-viewed-wrapper {
+    margin-bottom: 20px;
+}
+
+.wpc-shortcode-container, .wpc-shortcode-row {
+    overflow: hidden;
+}
+
+.wpc-user-img img {
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 240px;
+    max-width: 240px;
+    border: 1px solid #d3d3d3;
+}
+
+@media screen and (max-width: 980px) {
+    .wpc-user-img img {
+        max-width: 180px;
+    }
+}
+
+.wpc-username {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.wpc-course-excerpt {
+    font-size: 18px;
+}
+
+.wpc-course-categories-header {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#wpc-powered-by {
+    font-size: 14px;
+    padding-top: 10px;
+    margin-top: 10px;
+    border-top: 1px solid #d3d3d3;
+}
+
+.wpc-single-course-lesson-wrapper {
+    margin-top: 20px;
+}
+
+#wpc-course-search {
+    max-width: 148px;
+}
+
+@media screen and (max-width: 505px) {
+    .wpc-course-filter-sep {
+        display: block !important;
+        margin-top: 10px;
+    }
+}
+
+.wpc-course-categories-list {
+    padding: 0 0 !important;
+}
+
+.wpc-course-categories-list li {
+    list-style: none;
+}
+
+.course-container {
+    width: calc(50% - 10px);
+    margin: 0px 20px 20px 0;
+    display: inline-block;
+    vertical-align: top;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+@media screen and (max-width: 1200px) {
+    .course-container {
+        width: 100%;
+    }
+}
+
+.course-container:nth-of-type(even) {
+    margin-right: 0;
+    margin-left: -5px;
+}
+
+.course-container h2 {
+    margin-top: 10px;
+}
+
+.wpc-progress-bar {
+    background-color: #d0d0d0;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.wpc-viewed-progress {
+    background-color: #23d19f !important;
+}
+
+.wpc-progress-bar-level {
+    background-color: #009ee5;
+    color: #fff;
+    padding: 5px 0;
+    -webkit-transition: width 1s, height 1s;
+    transition: width 1s, height 1s;
+}
+
+.wpc-progress-bar-text {
+    font-size: 18px;
+    margin-left: 10px;
+    white-space: nowrap;
+}
+
+.wpc-course-title {
+    margin-top: 15px;
+}
+
+.wpc-course-title a {
+    text-decoration: none;
+}
+
+.course-category-list .wpc-button {
+    display: block;
+}
+
+.course-category-list ul {
+    padding: 0;
+    margin: 0;
+}
+
+.course-category-list ul a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.course-meta-wrapper {
+    background: #ececec;
+    padding: 10px 20px;
+    margin: 20px -20px -20px;
+    border-top: 1px solid #d3d3d3;
+}
+
+.start-button {
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.cm-item {
+    font-size: 18px;
+}
+
+.course-category-list .cm-item {
+    background-color: #23d19f;
+    color: #fff;
+    padding: 5px 10px;
+    border: 1px solid #12ad80;
+    border-radius: 4px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
+.course-category-list .cm-item:hover {
+    background-color: #12ad80;
+}
+
+.wpc-breadcrumb a {
+    text-decoration: none;
+}
+
+.single-lesson-course-progress {
+    margin-bottom: 15px;
+}
+
+.wpc-module-title {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    width: 100%;
+    border-bottom: 1px solid #d3d3d3;
+    margin-top: 20px;
+}
+
+.wpc-module-title:first-of-type {
+    margin-top: 0;
+}
+
+.wpc-module {
+    margin-bottom: 10px;
+    background: #fff;
+    padding: 10px;
+}
+
+.toolbar-button {
+    padding: 5px;
+    border: 1px solid #d3d3d3;
+    display: block;
+    border-radius: 4px;
+    margin: 5px 0;
+}
+
+.lesson-list {
+    padding: 0 0 !important;
+    list-style: none !important;
+}
+
+.lesson-nav {
+    margin: 0;
+    padding: 0 !important;
+    position: relative;
+    list-style: none;
+    overflow-y: auto;
+    max-height: 600px;
+}
+
+.wpc-single-course-lesson-wrapper .lesson-nav {
+    max-height: none;
+    padding: 0 0 !important;
+}
+
+.lesson-button {
+    margin: 5px 0;
+    list-style: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 3px 3px 3px rgb(0 0 0 / 10%);
+    background-color: #fff;
+    text-decoration: none;
+    border: 1px solid #d3d3d3;
+    overflow: hidden;
+}
+
+.lesson-button:hover {
+    background: #f5f5f5;
+}
+
+.lesson-button:first-of-type {
+    margin-top: 0;
+}
+
+.lesson-button i {
+    margin-right: 5px;
+    position: relative;
+    top: -1px;
+}
+
+.lesson-button a:hover {
+    text-decoration: none;
+}
+
+.active-lesson-button {
+    color: #000;
+    background-color: #ececec;
+}
+
+a.wpc-completed, a.wpc-viewed {
+    color: #fff;
+}
+
+a.wpc-viewed {
+    background-color: #23d19f;
+    border: 1px solid #12ad80;
+}
+
+a.wpc-viewed:hover {
+    background-color: #12ad80;
+}
+
+a.wpc-completed {
+    background-color: #009ee5;
+    border: 1px solid #036d9c;
+}
+
+a.wpc-completed:hover {
+    background-color: #036d9c;
+}
+
+.tool-toggle {
+    display: inline-block;
+}
+
+.tool-toggle i {
+    padding: 5px;
+    margin: 0 10px 10px 0;
+    background: #23d19f;
+    border: 1px solid #12ad80;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.tool-toggle i:hover {
+    cursor: pointer;
+}
+
+.tools-container {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.toolbar-content {
+    margin: 10px 0;
+    display: none;
+    max-height: 184px;
+    overflow-y: scroll;
+}
+
+.wpc-single-teacher-thumbnail img {
+    border-radius: 500px;
+    border: 1px solid #d3d3d3;
+    padding: 20px;
+    background: #fff;
+}
+
+.wpc-toolbar-close,
+.wpc-toolbar-save {
+    width: 50%;
+    float: left;
+    padding: 10px;
+    font-size: 14px;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+}
+
+.wpc-toolbar-close {
+    background-color: rgb(222, 60, 98);
+}
+
+.wpc-toolbar-save {
+    background-color: #12c795;
+}
+
+.wpc-toolbar-save:hover {
+    background: rgb(24 224 169);
+}
+
+.wpc-toolbar-close:hover {
+    background-color: rgb(255 68 112);
+}
+
+.wpc-element-settings-icons {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+.wpc-element-settings-icons i {
+    background-color: #4a4a4a;
+    color: #fff;
+    padding: 10px;
+}
+
+.wpc-element-settings-icons i:hover {
+    background-color: #5f5f5f;
+}
+
+.wpc-element-settings-icons i:first-of-type {
+    border-bottom-left-radius: 4px;
+}
+
+.wpc-row-settings-icons, 
+.wpc-container-settings-icons {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 2;
+}
+
+.wpc-row-settings-icons i {
+    background-color: #12c795;
+    color: #fff;
+    padding: 10px;
+}
+
+.wpc-row-settings-icons i:hover {
+    background-color: #1ad6a2;
+}
+
+.wpc-row-settings-icons:last-of-type {
+    border-bottom-right-radius: 4px;
+}
+
+.wpc-settings-icons .fa-arrows {
+    cursor: move;
+}
+
+.wpc-container-settings-icons i {
+    background-color: #e21772;
+    color: #fff;
+    padding: 10px;
+}
+
+.wpc-container-settings-icons i:hover {
+    background-color: #fb308b;
+}
+
+.wpc-container-settings-icons i:last-of-type {
+    border-bottom-right-radius: 4px;
+}
+
+.wpc-row-empty-icon, .wpc-element-empty-icon {
+    text-align: center;
+}
+
+.wpc-row-empty-icon i {
+    border-radius: 100%;
+    color: #fff;
+    background-color: #12c795;
+    padding: 20px;
+}
+
+.wpc-element-empty-icon i {
+    border-radius: 100%;
+    color: #fff;
+    background-color: #4a4a4a;
+    padding: 20px;
+}
+
+.wpc-element-empty-icon i:hover {
+    background-color: #5f5f5f;
+}
+
+.wpc-row-empty-icon i:hover {
+    background-color: #1ad6a2;
+}
+
+.wpc-builder-container:hover {
+    outline: 3px solid #e21772;
+}
+
+.wpc-builder-row:hover, 
+.wpc-builder-grabbed-row {
+    outline: 3px solid #12c795;
+}
+
+.wpc-builder-selectable {
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.wpc-builder-element:hover,
+.wpc-builder-grabbed-element {
+    outline: 3px solid #4a4a4a;
+}
+
+.wpc-builder-element:hover .wpc-element-settings-icons, 
+.wpc-builder-row:hover .wpc-row-settings-icons,
+.wpc-builder-container:hover .wpc-container-settings-icons {
+    display: block;
+    font-size: 18px;
+}
+
+.wpc-element-type-toolbar {
+    display: none;
+    top: 0;
+    left: 0;
+}
+
+.wpc-element-type-toolbar:before {
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #5b296a;
+}
+
+.wpc-element-type-toolbar-content {
+    padding: 20px;
+    overflow: hidden;
+}
+
+.wpc-element-type-header {
+    background-color: #5b296a;
+    padding: 20px 10px;
+    color: #fff;
+    font-size: 18px;
+    margin: 0;
+}
+
+.wpc-element-type-header .fa-times {
+    cursor: pointer;
+}
+
+.wpc-add-element {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 10px;
+    background: white;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #636363;
+}
+
+.wpc-builder-button-select, 
+.wpc-builder-button-toggle {
+    background-color: #e8e6e6;
+    color: #636363;
+    border: 0;
+    padding: 8px 11px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.wpc-add-element:hover,
+.wpc-builder-button-select:hover, 
+.wpc-builder-button-toggle:hover {
+    background-color: #e8e6e6;
+}
+
+.wpc-builder-selected-button {
+    background-color: #e21772 !important;
+    color: #fff;
+}
+
+.wpc-floating-toolbar,
+.wpc-element-type-toolbar {
+    width: 480px;
+    background: #f5f5f5;
+    position: absolute;
+    border-radius: 4px;
+    overflow: hidden;
+    z-index: 9999;
+    box-shadow: rgb(0 0 0 / 20%) 3px 3px 15px;
+}
+
+.wpc-tools-tab {
+    background-color: #e21772;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 0;
+    width: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    float: left;
+    text-align: center;
+    padding: 10px;
+}
+
+.wpc-tools-tab-active {
+    background-color: #ff308d;
+}
+
+.wpc-toolbar-textarea {
+    width: 100%;
+    min-height: 240px;
+    width: calc(100% - 1px);
+    background-color: #f5f5f5;
+    border: 0;
+    padding: 10px;
+}
+
+.wpc-tools-tabs {
+    margin: 0;
+    overflow: hidden;
+}
+
+.wpc-builder-img {
+    display: inline;
+    max-width: 100%;
+}
+
+.wpc-option-tabs {
+    overflow: hidden;
+    margin: 0 0 10px 0;
+}
+
+.wpc-option-tabs li {
+    width: 25%;
+    box-sizing: border-box;
+    float: left;
+    list-style: none;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid lightgray;
+    margin-left: -1px;
+    cursor: pointer;
+}
+
+.wpc-option-tabs li:first-of-type {
+    margin-left: 0;
+}
+
+.wpc-option-tabs li:hover, .wpc-option-tab-active {
+    background-color: #f5f5f5;
+}
+
+.wpc-accordion-option-content input[type="text"], .wpc-accordion-option-content input[type="number"], .wpc-option-row input {
+    background-color: #f5f5f5;
+    padding: 5px 10px;
+    border: 0;
+    max-width: 100%;
+}
+
+.wpc-builder-range {
+    width: calc(100% - 104px);
+}
+
+.wpc-builder-range-input {
+    max-width: 96px !important;
+}
+
+.wpc-accordion-option-content label {
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.wpcb-center-label {
+    text-align: center;
+    margin: 0 auto;
+    display: block !important;
+    font-weight: 400 !important;
+}
+
+.wpc-accordion-option-content select {
+    width: calc(100% - 2px);
+    background-color: #f5f5f5;
+    border: 0;
+    padding: 10px;
+}
+
+.wpc-toolbar-section .iris-picker {
+    position: absolute;
+    z-index: 2;
+}
+
+.wpc-toolbar-section {
+    float: left;
+    clear: right;
+    padding: 5px 10px;
+    border-right: 1px solid #d3d3d3;
+}
+
+.wpc-accordion-option-content {
+    padding: 10px;
+    background-color: #fff;
+}
+
+.wpc-accordion-single-option {
+    border-bottom: 1px solid #f5f5f5;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    overflow: hidden;
+}
+
+.wpc-accordion-single-option:first-of-type {
+    padding-top: 0;
+}
+
+.wpc-accordion-single-option:last-of-type {
+    padding-bottom: 0;
+    border: 0;
+}
+
+.wpc-accordion-single-option,
+.wpc-accordion-single-option input,
+.wpc-option-row input {
+    color: #636363;
+}
+
+.wpc-accordion-single-option .wpc-tools-tab {
+    margin-bottom: 10px;
+    border: 1px solid lightgray;
+    color: #636363;
+    background-color: #fff;
+}
+
+.wpc-accordion-single-option .wpc-tools-tab-active {
+    background-color: #f5f5f5;
+}
+
+.wpc-tools-tab:first-of-type {
+    border-right: 0;
+}
+
+.wpc-admin-box-left {
+    float: left;
+    margin-right: 20px;
+    width: calc(66.6% - 20px);
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.wpc-admin-box-right {
+    float: left;
+    width: 33.3%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.wpc-admin-box-wrapper {
+    overflow: hidden;
+}
+
+.wpc-admin-box-content {
+    padding: 20px 0 0;
+}
+
+.wpc-admin-box-footer {
+    margin: 0px -20px -20px;
+    padding: 20px;
+    background-color: #f0f0f1;
+}
+
+.wpc-admin-box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 3px 3px 10px rgb(0 0 0 / 10%);
+    margin-bottom: 20px;
+}
+
+.wpc-admin-box p, .wpc-admin-box .button {
+    font-size: 16px;
+}
+
+.wpc-admin-box h2, .wpc-admin-box p {
+    color: #4e4e4e;
+}
+
+.wpc-admin-box .wpc-video-wrapper {
+    margin-top: 20px;
+}
+
+.wpc-admin-box-header {
+    border-bottom: 1px solid #d3d3d3;
+    margin: -20px -20px 0;
+    padding: 20px;
+    font-size: 22px;
+    color: #59296b;
+}
+
+.wpc-admin-box .nav-tab {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background-color: #fff;
+}
+
+.wpc-admin-box .nav-tab-active {
+    background-color: #f0f0f1;
+}
+
+.wpc-admin-box .nav-tab:hover {
+    color: #fcd46c;
+}
+
+.wpc-tab-content h2 {
+    margin-top: 0;
+}
+
+.wpc-admin-course-progress {
+    margin: 20px 0;
+}
+
+.wpc-tab-content .dataTables_wrapper th {
+    background: #59296b;
+    color: #fff;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    padding-left: 20px !important;
+}
+
+.select2-container .select2-search--inline {
+    float: none !important;
+}
+
+.wpc-chart-filter {
+    margin-bottom: 10px;
+}
+
+.wpc-hide {
+    display: none;
+}
+
+.wpc-pointer {
+    cursor: pointer;
+}
+
+.wpc-fw-input {
+    width: calc(100% - 1px);
+}
+
+.wpc-admin-h1 {
+    margin-bottom: 10px !important;
+}
+
+.wpc-not-editable {
+    cursor: pointer;
+}
+
+.wpc-admin-meta-lg {
+    font-size: 60px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.wpc-admin-select {
+    max-width: 100%;
+}
+
+.wpc-lesson-meta-course-select {
+    max-width: 200px !important;
+}
+
+.course-select {
+    max-width: 100% !important;
+}
+
+.wp-submenu a[href="admin.php?page=wpc_premium"] {
+    background-color: #e21772;
+    color: #fff !important;
+}
+
+.wp-submenu a[href="admin.php?page=wpc_premium"]:hover {
+    background-color: #009ee5 !important;
+}
+
+#wpc-premium-box-img {
+    max-width: 100%;
+}
+
+.wpc-premium-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.wpc-premium-table td {
+    padding: 10px;
+    border: 1px solid #d3d3d3;
+}
+
+.wpc-premium-table tr:nth-of-type(odd) {
+    background-color: #f0f0f1;
+}
+
+.wpc-premium-table th {
+    background-color: #fff;
+}
+
+#wpc-premium-box-wrapper {
+    text-align: center;
+}
+
+#wpc-premium-box-wrapper img {
+    max-width: 300px;
+    margin: 20px auto 0;
+}
+
+.wpc-award-requirements-wrapper {
+    margin: -40px;
+}
+
+.wpc-requirement {
+    padding: 20px;
+    border: 1px solid #d3d3d3;
+    margin-bottom: 10px;
+}
+
+.wpc-requirement select {
+    max-width: 200px;
+    margin-right: 5px;
+}
+
+.wpc-requirement input {
+    margin-right: 5px;
+}
+
+.wpc-delete-requirement {
+    margin-top: 20px !important;
+}
+
+.wpc-admin-pagination {
+    float: right;
+    padding: 10px 0;
+}
+
+.wpc-admin-pagination .page-numbers {
+    color: #0071a1;
+    border: 1px solid #0071a1;
+    background: #f3f5f6;
+    vertical-align: top;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 2.15384615;
+    min-height: 30px;
+    margin: 0;
+    padding: 0 10px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    border-radius: 3px;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+.wpc-admin-pagination .current, .wpc-admin-pagination .dots {
+    color: #a0a5aa !important;
+    border-color: #ddd !important;
+    background: #f7f7f7 !important;
+    box-shadow: none !important;
+    text-shadow: 0 1px 0 #fff !important;
+    cursor: default;
+    transform: none !important;
+}
+
+.wpc-admin-pagination .button {
+    position: relative;
+    top: -5px;
+}
+
+.wpc-alt-admin-buttons {
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+
+.wpc-admin-nav-menu {
+    margin-right: 20px;
+}
+
+.wpc-admin-menu-item {
+    display: inline-block;
+    margin-bottom: 0;
+    padding: 5px;
+}
+
+#wpc-admin-logo-sm-wrapper {
+    padding: 13px;
+    display: inline-block;
+}
+
+.wpc-admin-menu-item>span {
+    cursor: pointer;
+    padding-bottom: 13px !important;
+}
+
+.wpc-admin-menu-item a, .wpc-admin-menu-item>span {
+    display: block;
+    font-size: 16px;
+    padding: 15px;
+    text-decoration: none;
+    color: #59296b;
+}
+
+.wpc-submenu-toggle {
+    margin-bottom: -2px;
+}
+
+.wpc-admin-menu-item:not(:first-child) {
+    margin-left: -4px;
+}
+
+.wpc-admin-menu-item:hover>span, .wpc-admin-menu-item:hover>a {
+    color: #fcd46c;
+}
+
+.wpc-main-admin-wrapper {
+    margin-right: 20px;
+}
+
+.wpc-admin-menu-wrapper {
+    background-color: #fff;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    border-radius: 4px;
+    box-shadow: 3px 3px 15px rgb(0 0 0 / 30%);
+}
+
+.wpc-alt-admin-menu {
+    margin: 0;
+    border-radius: 4px;
+    overflow: hidden;
+    float: right;
+}
+
+.wpc-admin-submenu {
+    position: absolute;
+    z-index: 9999;
+    background: #fff;
+    box-shadow: 3px 5px 10px rgb(0 0 0 / 10%);
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    margin-top: 5px;
+    margin-left: -5px;
+}
+
+.wpc-admin-submenu li:hover a {
+    color: #fcd46c;
+}
+
+.wpc-admin-submenu li a {
+    color: #59296b;
+}
+
+.wpc-admin-submenu li {
+    margin-bottom: 0;
+}
+
+.wpc-admin-submenu li:last-of-type {
+    border: 0;
+}
+
+.wpc-admin-menu-item-active {
+    background-color: #59296b !important;
+}
+
+.wpc-admin-menu-item-active>a, .wpc-admin-menu-item-active>span {
+    color: #fff !important;
+}
+
+.ui-sortable-handle, .wpc-order-lesson-list-lesson {
+    cursor: grab;
+}
+
+#wpc-sort-lessons-table td {
+    vertical-align: middle;
+}
+
+#wpc-module-name {
+    width: calc(100% - 22px);
+}
+
+.wpc-module-button {
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+}
+
+.wpc-module-button input[type="text"] {
+    border: 0;
+    border-bottom: 1px dotted;
+    border-radius: 0;
+    background: transparent;
+    font-weight: 700;
+    max-width: 160px;
+}
+
+.wpc-delete-module {
+    float: right;
+}
+
+.lesson-list td .wp-menu-image:before {
+    color: rgba(0, 0, 0, 0.5) !important;
+    float: left;
+}
+
+.wpc-order-lesson-list-module {
+    background-color: #009ee5 !important;
+}
+
+.wpc-order-lesson-list-module label {
+    color: #fff !important;
+}
+
+.card .lesson-list li, .card .course-list li {
+    border: 1px solid #d3d3d3;
+    padding: 5px;
+    margin-bottom: 5px;
+    background: #fff;
+    cursor: pointer;
+}
+
+.category-list li, .course-list-buttons li {
+    display: inline-block;
+    margin: 5px 5px 5px 0 !important;
+}
+
+#wpc-lesson-restriction-overlay {
+    height: 100%;
+    width: calc(100% - 20px);
+    background: rgba(255, 0, 42, 0.9);
+    color: #fff;
+    text-align: middle;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    border: 1px solid #8b0000;
+    text-shadow: 1px 1px 2px #8b0000;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.wpc-lightbox-container {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.3);
+    width: 80%;
+    padding: 10%;
+    height: 80%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.wpc-lightbox {
+    position: relative;
+    font-size: 16px;
+    border-radius: 4px;
+    background: #fff;
+}
+
+table.dataTable tbody th, table.dataTable tbody td {
+    padding: 20px;
+}
+
+.dataTables_wrapper {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.dataTables_wrapper .dataTables_length select {
+    -webkit-appearance: auto;
+    background: none;
+}
+
+.dataTables_wrapper .dataTables_filter input {
+    line-height: 1em;
+}
+
+table.dataTable thead th {
+    padding: 10px 10px !important;
+}
+
+.dataTables_filter {
+    margin-bottom: 10px;
+}
+
+.dataTable .odd {
+    background-color: #f9f9f9;
+}
+
+.dataTable .wpc-progress-bar {
+    margin: 0;
+}
+
+.wpc-question-btn {
+    padding: 0 6px 1px !important;
+    line-height: 18px !important;
+    height: 20px !important;
+    font-size: 10px;
+    margin: 0 5px 5px 0 !important;
+    min-height: 0 !important;
+}
+
+.wpc-question {
+    cursor: pointer;
+}
+
+.info-button {
+    float: left;
+    margin-right: 3px !important;
+    margin-bottom: 10px !important;
+    clear: right;
+}
+
+.wpc-option-row {
+    border-bottom: 1px solid #d3d3d3;
+    margin: 0 -20px;
+    padding: 20px 40px 40px;
+}
+
+.postbox .wpc-option-row {
+    margin: 0 -12px;
+}
+
+.wpc-option-row:last-of-type {
+    margin-bottom: -20px;
+    border-bottom: 0;
+}
+
+.postbox .wpc-option-row:last-of-type {
+    margin-bottom: 0;
+}
+
+.wpc-option-row .wpc-option-toggle {
+    float: right;
+}
+
+.wpc-option-row .wpc-wide-input {
+    width: calc(100% - 1px);
+    margin-top: 0;
+}
+
+#wp-wpc_logged_out_message-wrap, .wpc-color-picker-options-wrapper {
+    margin-top: 20px;
+}
+
+.wpc-admin-options-menu {
+    margin-bottom: 30px;
+    padding: 0;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.wpc-admin-options-menu ul {
+    margin: 0;
+}
+
+.wpc-admin-options-menu li {
+    margin: 0;
+    width: 100%;
+    padding: 20px;
+    color: #fff;
+    background: #59296b;
+    font-size: 16px;
+    cursor: pointer;
+    box-sizing: border-box;
+    border-bottom: 1px solid #f0f0f1;
+}
+
+.wpc-admin-options-menu li:hover {
+    color: #fbd46c;
+}
+
+.wpc-admin-options-menu li:last-of-type {
+    border: 0;
+}
+
+.wpc-option {
+    margin-bottom: 10px;
+}
+
+.wpc-option-toggle {
+    margin-top: 1em;
+}
+
+.wpc-options-header {
+    margin: -20px -20px 20px;
+    padding: 20px;
+    background: #ececec;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.button.small {
+    padding: 0 4px 1px;
+}
+
+.wpc-admin-button {
+    color: #fff;
+    padding: 6px 12px;
+    background: #e21772;
+    display: inline-block;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    border: 0;
+}
+
+.wpc-admin-button:hover {
+    background-color: #ff308d;
+    color: #fff;
+}
+
+.wpc-admin-button-green {
+    background-color: #12c795;
+}
+
+.wpc-admin-button-green:hover {
+    background-color: rgb(24 224 169);
+}
+
+.wpc-admin-button-lg {
+    font-size: 18px;
+    padding: 12px 24px;
+}
+
+.wpc-admin-box-toolbar {
+    margin-top: 20px;
+    border-radius: 4px;
+}
+
+.wpc-admin-box-toolbar .tablenav {
+    margin: 0;
+    padding: 0;
+}
+
+.wpc-admin-toolbar {
+    background: #f5f5f5;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.wpc-metabox-toolbar {
+    margin: -6px -12px 10px;
+    overflow: hidden;
+}
+
+.wpc-switch {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+    color: #4e4e4e;
+}
+
+.wpc-switch input {
+    display: none;
+}
+
+.wpc-slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: 0.4s;
+}
+
+.wpc-slider:before {
+    background-color: #fff;
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: 0.4s;
+    width: 26px;
+}
+
+input:checked+.wpc-slider {
+    background-color: #24d19f;
+}
+
+input:checked+.wpc-slider:before {
+    transform: translateX(26px);
+}
+
+.wpc-slider.wpc-round {
+    border-radius: 34px;
+}
+
+.wpc-slider.wpc-round:before {
+    border-radius: 50%;
+}
+
+.wpc-switch+label {
+    cursor: default;
+    color: #4e4e4e;
+}
+
+#wpc-certificate-preview .wpc-certificate {
+    margin: 0 auto !important;
+}
+
+.wpc-certificate-tools {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.wpc-certificate-header {
+    text-align: center;
+}
+
+.certificate-bg {
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.wpc-certificate {
+    position: relative;
+    width: 11in;
+    height: 8.5in;
+    margin: 0 auto;
+}
+
+.wpc-certificate-wrapper {
+    padding: 20px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 3px 3px 10px #d3d3d3;
+}
+
+.wpc-certificate-wrapper:last-of-type {
+    margin-bottom: 0;
+}
+
+.wpc-certificate-title {
+    margin-bottom: 10px;
+}
+
+.wpc-single-certificate-wrapper {
+    text-align: center;
+}
+
+.wpc-single-certificate-wrapper .wpc-single-certificate {
+    margin: 0 auto;
+}
+
+.wpc-single-certificate {
+    display: inline-block;
+}
+
+.wpc-cert-row {
+    position: relative;
+    z-index: 1;
+}
+
+.wpc-cert-img {
+    z-index: 0;
+    max-height: 8.5in;
+}
+
+.wpc-certificate-title {
+    font-size: 32px;
+}
+
+.wpc-certificate-user {
+    font-size: 48px;
+    margin: 0;
+}
+
+.wpc-certificate-text {
+    font-size: 18px;
+}
+
+.wpc-builder-add-media-button {
+    border-radius: 100%;
+    border: 0;
+    height: 42px;
+    width: 42px;
+    text-align: center;
+    background-color: #14c795;
+    color: white;
+    cursor: pointer;
+}
+
+.wpc-builder-button {
+    padding: 9px 12px;
+    border: 0;
+    border-radius: 4px;
+    background-color: #f5f5f5;
+    color: #636363;
+    cursor: pointer;
+}
+
+.wpc-builder-button-positive {
+    background-color: #12c795;
+    color: white;
+}
+
+.wpc-builder-button-positive:hover {
+    background-color: rgb(24 224 169);
+}
+
+.wpc-builder-button-negative {
+    background-color: rgb(222, 60, 98);
+    color: #fff;
+}
+
+.wpc-builder-button-negative:hover {
+    background-color: rgb(255 68 112);
+}
+
+.wpc-builder-bg-img-wrapper {
+    width: 100%;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    background-size: cover;
+    padding: 120px 20px;
+    text-align: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+}
+
+.wpc-builder-bg-tools {
+    position: absolute;
+    top: 0;
+    right: 0; 
+    border-bottom-left-radius: 4px;
+    overflow: hidden;
+}
+
+.wpc-builder-bg-tools i {
+    padding: 10px;
+    background-color: #12c795;
+    color: white;
+    cursor: pointer;
+}
+
+.wpc-builder-bg-tools .fa-trash {
+    background-color: rgb(222, 60, 98);
+}
+
+.wpc-certificate-builder-textarea {
+    background-color: transparent;
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+    border: 1px dotted #d3d3d3;
+    background-size: cover;
+}
+
+.wpc-builder-row {
+    line-height: 1.1;
+}
+
+.wpc-badges input[type="submit"] {
+    padding: 3px 6px 6px !important;
+    font-size: 14px !important;
+}
+
+.wpc-badge-term-name:after {
+    content: ",";
+}
+
+.wpc-badge-term-name:last-of-type:after {
+    content: "";
+}
+
+.wpc-badge-pagination {
+    border-top: 1px solid #d3d3d3;
+    padding-top: 15px;
+    text-align: right;
+}
+
+.wpc-badge-design-option {
+    margin-bottom: 5px;
+}
+
+.wpc-badge-options-wrapper {
+    overflow: hidden;
+}
+
+.wpc-options-sidebar {
+    float: left;
+    width: calc(50% - 20px);
+    padding: 20px;
+    margin: 10px 20px 10px 0;
+    border-right: 1px solid #d3d3d3;
+}
+
+.wpc-options-content {
+    width: 50%;
+    float: left;
+}
+
+.wpc-delete-badge-requirement {
+    float: right;
+}
+
+.wpc-badge-requirement {
+    padding: 20px;
+    border: 1px solid #d3d3d3;
+    margin-bottom: 11px;
+    overflow: hidden;
+}
+
+.single-requirement-toolbar {
+    overflow: hidden;
+    margin: 20px -20px -20px;
+    padding: 10px;
+    background: #f5f5f5;
+    border-top: 1px solid #ddd;
+}
+
+.wpc-badges-courses-select, .wpc-badges-lesson-select {
+    width: 160px;
+}
+
+.wpc-badge-times {
+    max-width: 80px;
+}
+
+.wpc-badge-rules-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.wpc-badge-rules-list li {
+    border-bottom: 1px solid #d3d3d3;
+    padding: 10px 20px;
+}
+
+.wpc-badge-rules-list li:first-of-type {
+    border-top: 0;
+}
+
+.wpc-badge-rules-list li:last-of-type {
+    border-bottom: 0;
+}
+
+.wpc-rule-true {
+    background-color: #d4edda;
+}
+
+.wpc-rule-false {
+    background-color: #f8d7da;
+}
+
+.wpc-badge-title {
+    color: #444;
+    font-size: 14px;
+    margin: 10px 0 0;
+    text-align: center;
+}
+
+.wpc-badge-container {
+    position: relative;
+    top: 0;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #d3d3d3;
+    box-shadow: 3px 3px 10px #d3d3d3;
+    padding: 20px;
+    border-radius: 60px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.wpc-badge-container:hover {
+    top: -10px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.wpc-badge-wrapper {
+    display: inline-block;
+    margin: 10px 14px;
+    width: 120px;
+    vertical-align: top;
+}
+
+.wpc-badge {
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    -webkit-mask-position: center;
+}
+
+.wpc-badge i {
+    font-size: 40px;
+}
+
+.wpc-badge span {
+    text-align: center;
+    height: 80px;
+    width: 80px;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.wpc-no-badge {
+    opacity: 0.3;
+}
+
+.wpc-circle {
+    -webkit-mask-image: url("../../wp-courses-premium/svg/circle.svg");
+    mask-image: url("../../wp-courses-premium/svg/circle.svg");
+}
+
+.wpc-circle-outline {
+    -webkit-mask-image: url("../../wp-courses-premium/svg/circle-outline.svg");
+    mask-image: url("../../wp-courses-premium/svg/circle-outline.svg");
+}
+
+.wpc-award {
+    -webkit-mask-image: url("../../wp-courses-premium/svg/award.svg");
+    mask-image: url("../../wp-courses-premium/svg/award.svg");
+}
+
+.wpc-heart {
+    -webkit-mask-image: url("../../wp-courses-premium/svg/heart.svg");
+    mask-image: url("../../wp-courses-premium/svg/heart.svg");
+}
+
+.wpc-pentagon {
+    -webkit-mask-image: url("../../wp-courses-premium/svg/pentagon.svg");
+    mask-image: url("../../wp-courses-premium/svg/pentagon.svg");
+}
+
+.wpc-wave {
+     -webkit-mask-image: url("../../wp-courses-premium/svg/wave.svg");
+    mask-image: url("../../wp-courses-premium/svg/wave.svg");
+}
+
+.wpc-24-badge {
+     -webkit-mask-image: url("../../wp-courses-premium/svg/24-point-badge.svg");
+    mask-image: url("../../wp-courses-premium/svg/wave.svg");
+}
+
+.wpc-24-ribbon {
+     -webkit-mask-image: url("../../wp-courses-premium/svg/24-point-ribbon.svg");
+    mask-image: url("../../wp-courses-premium/svg/wave.svg");
+}
+
+.wpc-24-ribbon i {
+    position: relative;
+    top: -7px;
+}
+
+.wpc-sun {
+    -webkit-mask-image: url("../../wp-courses-premium/svg/sun.svg");
+    mask-image: url("../../wp-courses-premium/svg/wave.svg");
+}
+
+.non-semantic-protector {
+    position: relative;
+    z-index: 1;
+}
+
+.wpc-ribbon {
+    font-size: 16px !important;
+    width: 180px;
+    position: relative;
+    background: #ba89b6;
+    color: #fff;
+    text-align: center;
+    padding: 10px 10px !important;
+    margin: -25px auto 40px auto !important;
+}
+
+.wpc-ribbon:before, .wpc-ribbon:after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: -1em;
+    border: 1.5em solid #986794;
+    z-index: -1;
+}
+
+.wpc-ribbon:before {
+    left: -2em;
+    border-right-width: 1.5em;
+    border-left-color: transparent;
+}
+
+.wpc-ribbon:after {
+    right: -2em;
+    border-left-width: 1.5em;
+    border-right-color: transparent;
+}
+
+.wpc-ribbon .wpc-ribbon-content:before, .wpc-ribbon .wpc-ribbon-content:after {
+    content: "";
+    position: absolute;
+    display: block;
+    border-style: solid;
+    border-color: #804f7c transparent transparent transparent;
+    bottom: -1em;
+}
+
+.wpc-ribbon .wpc-ribbon-content:before {
+    left: 0;
+    border-width: 1em 0 0 1em;
+}
+
+.wpc-ribbon .wpc-ribbon-content:after {
+    right: 0;
+    border-width: 1em 1em 0 0;
+}
+
+.wpc-quiz-table th {
+    background: #59296b;
+    color: #fff;
+}
+
+.wpc-question-img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.wpc-quiz-question-wrapper {
+    margin-bottom: 20px;
+}
+
+.wpc-quiz-question-img {
+    max-width: 100%;
+    display: block;
+}
+
+table .wpc-quiz-question-img {
+    max-width: 240px;
+}
+
+.wpc-fe-quiz-question p {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.wpc-fe-quiz-question p:last-of-type {
+    margin-bottom: 0;
+}
+
+.wpc-single-answer {
+    margin-bottom: 5px;
+}
+
+.wpc-single-answer:last-of-type {
+    margin-bottom: 0;
+}
+
+.wpc-single-answer label {
+    padding-left: 10px;
+}
+
+.wpc-single-answer input, .wpc-single-answer label {
+    cursor: pointer;
+}
+
+.post-type-wpc-quiz #wp-content-wrap, .post-type-wpc-quiz #postdivrich {
+    display: none;
+}
+
+#wpc-quiz-toolbar {
+    background: #f5f5f5;
+    padding: 10px;
+    margin: -6px -12px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+#wpc-save-question {
+    float: right;
+}
+
+.wpc-question-text {
+    min-width: 100%;
+    max-height: 100%;
+    min-height: 100px;
+    margin-bottom: 20px;
+}
+
+.wpc-answer {
+    width: calc(100% - 57px);
+    margin-bottom: 10px;
+}
+
+.wpc-correct-answer {
+    width: 16px;
+    padding: 0 0 !important;
+    background-color: #d4edda;
+}
+
+.wpc-remove-answer {
+    width: 30px !important;
+    padding: 0 0 !important;
+    margin-left: 5px !important;
+}
+
+#wpc-add-answer {
+    margin-top: 10px;
+}
+
+#wpc-fe-quiz-container .wpc-progress-bar {
+    margin-bottom: 30px;
+}
+
+.wpc-quiz-selected {
+    background-color: #f5f5f5;
+    color: #000;
+}
+
+.wpc-quiz-welcome-message {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.wpc-quiz-attempts-remaining {
+    padding: 20px 20px !important;
+    margin: 0 -20px -20px;
+    background-color: #ececec;
+    border-top: 1px solid #d3d3d3;
+}
+
+#wpcq_quiz_meta {
+    overflow: hidden;
+}
+
+.wpc-quiz-question, .wpc-quiz-question-list {
+    box-sizing: border-box;
+}
+
+.wpc-quiz-question {
+    width: 66.66%;
+    border-right: 1px solid #d3d3d3;
+    padding: 20px;
+    float: left;
+}
+
+.wpc-quiz-question-list {
+    float: left;
+    width: 33.33%;
+    padding: 20px 20px 20px 40px;
+    margin: 0;
+    max-height: 480px;
+    overflow-y: auto;
+}
+
+.wpc-quiz-question-list li {
+    padding: 10px;
+    border: 1px solid #d3d3d3;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.wpc-quiz-question-list li .fa-bars {
+    cursor: grab;
+}
+
+.wpc-quiz-table {
+    text-align: left;
+    width: 100%;
+    background-color: #fff;
+}
+
+.wpc-quiz-table ul {
+    padding: 0 0 !important;
+    list-style: none !important;
+}
+
+.wpc-quiz-table li {
+    padding: 5px;
+    border-bottom: 1px solid #cbd0d4;
+}
+
+.wpc-quiz-table li:last-of-type {
+    border-bottom: 0;
+}
+
+.wpc-quiz-table tr {
+    border: 1px solid #d3d3d3;
+}
+
+.wpc-quiz-table td, .wpc-quiz-table th {
+    padding: 20px;
+}
+
+.wpc-quiz-score-bar-wrapper {
+    margin-bottom: 10px;
+}
+
+.single-quiz-results-wrapper {
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.wpc-wrong-answer {
+    background-color: #f8d7da;
+}
+
+.wpc-quiz-score {
+    padding: 10px 0;
+}
+
+.wpc-quiz-result-time {
+    margin-top: 10px;
+}
+
+.wpc-quiz-score-percent {
+    background: #009ee5;
+    color: #fff;
+    border-radius: 100px;
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+.wpc-fe-quiz-question-container {
+    border-top: 1px solid #d3d3d3;
+    padding-top: 20px;
+}
+
+#wpc-fe-quiz-container h2 {
+    border-top: 1px solid #d3d3d3;
+    padding: 20px 0;
+}
+
+.wpcq-fe-buttons {
+    padding: 10px 0;
+    margin-top: 10px;
+}
+
+.wpcq-button {
+    background-color: #23d19f;
+    color: #fff;
+    padding: 5px 10px;
+    border: 1px solid #12ad80;
+    border-radius: 4px;
+    margin-right: 5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.wpcq-button:hover {
+    cursor: pointer;
+    background-color: #12ad80;
+}
+
+.wpcq-button:disabled {
+    background-color: #d2d2d2 !important;
+    border: 1px solid #afafaf !important;
+    cursor: default;
+}
+
+.wpc-fe-quiz-question {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.wpc-fe-quiz-question h3 {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+/********** WOOCOMMERCE **********/
+
+.wpc-woo-courses-table {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.wpc-woo-courses-table .wpc-button {
+    margin: 0;
+}
+
+.wpc-woo-courses-table td {
+    padding: 10px;
+}
+
+.wpc-woo-courses-table tr:nth-of-type(odd) {
+    background: #f5f5f5;
+}
+
+.wpc-woo-courses-table tr:nth-of-type(even) {
+    background: #d0d0d0;
+}
+
+.wpc-price {
+    font-size: 18px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.wpc-on-sale {
+    text-decoration: line-through;
+    font-size: 14px;
+}
+
+.wpc-purchased {
+    background: #009ee5;
+    padding: 10px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.wpc-sidebar, .wpc-sidebar-content {
+    float: left;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.wpc-sidebar {
+    width: 35%;
+}
+
+.wpc-left-sidebar {
+    width: calc(35% - 20px);
+    margin-right: 20px;
+}
+
+.wpc-right-sidebar {
+    width: calc(35% - 20px);
+    margin-left: 20px;
+    width: calc(35% - 20px) !important;
+    margin-left: 20px;
+    float: left !important;
+}
+
+.wpc-sidebar-content {
+    width: 65%;
+}
+
+.wpc-sidebar-content ol {
+    list-style: decimal;
+    padding: 20px 0 20px 20px;
+}
+
+@media screen and (max-width: 767px) {
+    .wpc-sidebar, .wpc-sidebar-content {
+        width: 100% !important;
+        float: none !important;
+    }
+    .wpc-sidebar-content {
+        margin-bottom: 20px;
+    }
+    .wpc-right-sidebar {
+        margin-left: 0;
+    }
+    .wpc-left-sidebar {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}

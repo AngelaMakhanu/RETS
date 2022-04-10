@@ -1,0 +1,580 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Courses LMS\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-26 23:53+0000\n"
+"PO-Revision-Date: 2021-10-05 17:20+0000\n"
+"Last-Translator: \n"
+"Language-Team: English (United States)\n"
+"Language: en_US\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.5.4; wp-5.8.1"
+
+#: admin/requirements-meta.php:52 init/enqueue.php:71
+msgid "A Specific Course"
+msgstr "A Specific Course"
+
+#: admin/requirements-meta.php:54 init/enqueue.php:73
+msgid "A Specific Lesson"
+msgstr "A Specific Lesson"
+
+#: admin/requirements-meta.php:56 init/enqueue.php:75
+msgid "A Specific Module"
+msgstr "A Specific Module"
+
+#: admin/requirements-meta.php:58 init/enqueue.php:77
+msgid "A Specific Quiz"
+msgstr "A Specific Quiz"
+
+#: templates/wpc-single-teacher.php:10
+msgid "About"
+msgstr "About"
+
+#: init/enqueue.php:36
+msgid "activate to sort column ascending"
+msgstr "activate to sort column ascending"
+
+#: init/enqueue.php:37
+msgid "activate to sort column descending"
+msgstr "activate to sort column descending"
+
+#: admin/admin-menu.php:361
+msgid "Add Module"
+msgstr "Add Module"
+
+#: admin/course-meta.php:96 admin/course-meta.php:117 admin/course-meta.php:137
+msgid "Add New"
+msgstr "Add New"
+
+#: admin/lesson-meta.php:111
+msgid "Add New Course"
+msgstr "Add New Course"
+
+#: admin/requirements-meta.php:30
+msgid "Add Requirement"
+msgstr "Add Requirement"
+
+#: admin/admin-nav-menu.php:7
+msgid "Affililate Program"
+msgstr "Affiliate Program"
+
+#: classes/class-wp-courses.php:35
+msgid "All"
+msgstr "All"
+
+#: wp-courses.php:158
+msgid "All Courses"
+msgstr "All Courses"
+
+#: admin/wpc-admin-student-table.php:42
+msgid "All Students"
+msgstr "All Students"
+
+#: templates/template-parts/course-filters.php:17
+msgid "Alphabetical"
+msgstr "Alphabetical"
+
+#: admin/requirements-meta.php:51 init/enqueue.php:70
+msgid "Any Course"
+msgstr "Any Course"
+
+#: admin/requirements-meta.php:53 init/enqueue.php:72
+msgid "Any Lesson"
+msgstr "Any Lesson"
+
+#: functions/functions.php:166
+msgid "any lessons yet"
+msgstr "any lessons yet"
+
+#: admin/requirements-meta.php:55 init/enqueue.php:74
+msgid "Any Module"
+msgstr "Any Module"
+
+#: admin/requirements-meta.php:57 init/enqueue.php:76
+msgid "Any Quiz"
+msgstr "Any Quiz"
+
+#: admin/admin-menu.php:281 admin/admin-menu.php:324
+msgid "Back"
+msgstr "Back"
+
+#: functions/requirements.php:403
+msgid "Badges"
+msgstr "Badges"
+
+#: functions/requirements.php:412
+msgid "Certificates"
+msgstr "Certificates"
+
+#: admin/requirements-meta.php:173
+msgid "Click \"add requirement\" to add your first requirement"
+msgstr "Click \"add requirement\" to add your first requirement"
+
+#: shortcodes.php:254 classes/class-wp-courses.php:13
+#: classes/class-wp-courses.php:152 init/enqueue.php:22
+msgid "Completed"
+msgstr "Completed"
+
+#: functions/functions.php:112
+msgid "completed"
+msgstr "completed"
+
+#: admin/admin-menu.php:300 admin/admin-menu.php:316
+msgid "Completed Lessons"
+msgstr "Completed Lessons"
+
+#: functions/functions.php:73 functions/functions.php:93
+msgid "Completed Percent"
+msgstr "Completed Percent"
+
+#: admin/requirements-meta.php:46 init/enqueue.php:68
+msgid "Completes"
+msgstr "Completes"
+
+#: admin/columns.php:9
+msgid "Connected Course"
+msgstr "Connected Course"
+
+#. id
+#: admin/lesson-meta.php:85
+msgid "Connected Courses"
+msgstr "Connected Courses"
+
+#: admin/admin-nav-menu.php:9
+msgid "Contact"
+msgstr "Contact"
+
+#: admin/admin-nav-menu.php:24 classes/class-wp-courses.php:32
+msgid "Course Categories"
+msgstr "Course Categories"
+
+#: admin/course-meta.php:104
+msgid "Course Category"
+msgstr "Course Category"
+
+#: admin/course-meta.php:15
+msgid "Course Details"
+msgstr "Course Details"
+
+#: admin/admin-nav-menu.php:25
+msgid "Course Difficulties"
+msgstr "Course Difficulties"
+
+#: admin/course-meta.php:124
+msgid "Course Difficulty"
+msgstr "Course Difficulty"
+
+#: functions/functions.php:120 functions/functions.php:161
+msgid "Course Name"
+msgstr "Course Name"
+
+#: admin/admin-menu.php:298 admin/admin-menu.php:305
+msgid "Course Progress"
+msgstr "Course Progress"
+
+#: admin/admin-nav-menu.php:21 init/cp-types.php:19
+msgid "Courses"
+msgstr "Courses"
+
+#: shortcodes.php:157 templates/wpc-archive-course.php:47
+msgid "Courses Powered by"
+msgstr "Courses Powered by"
+
+#. Description of the plugin
+msgid "Create unlimited courses on your WordPress website with WP Courses LMS."
+msgstr ""
+"Create unlimited courses on your WordPress website with WP Courses LMS."
+
+#: wp-courses.php:92 admin/admin-nav-menu.php:18
+msgid "Dashboard"
+msgstr "Dashboard"
+
+#: admin/columns.php:11
+msgid "Date"
+msgstr "Date"
+
+#: templates/template-parts/course-filters.php:14
+msgid "Default"
+msgstr "Default"
+
+#: admin/requirements-meta.php:166 init/enqueue.php:81
+msgid "Delete Requirement"
+msgstr "Delete Requirement"
+
+#: admin/widgets.php:11
+msgid "Displays a list of specific courses, lessons or teachers"
+msgstr "Displays a list of specific courses, lessons or teachers"
+
+#: admin/wpc-admin-student-table.php:91 admin/wpc-admin-student-table.php:114
+msgid "Email"
+msgstr "Email"
+
+#: init/cp-types.php:31
+msgid "Enter a Course Description Here"
+msgstr "Enter a Course Description Here"
+
+#: init/cp-types.php:100
+msgid "Enter a lesson description here"
+msgstr "Enter a lesson description here"
+
+#: init/cp-types.php:166
+msgid "Enter a module description here"
+msgstr "Enter a module description here"
+
+#: init/cp-types.php:229
+msgid "Enter a Teacher Description Here"
+msgstr "Enter a Teacher Description Here"
+
+#: init/enqueue.php:27
+msgid "Entries"
+msgstr "Entries"
+
+#: init/enqueue.php:26
+msgid "Filtered from a total entry count of"
+msgstr "Filtered from a total entry count of"
+
+#: init/enqueue.php:32
+msgid "First"
+msgstr "First"
+
+#: functions/functions.php:166
+msgid "hasn't"
+msgstr "hasn't"
+
+#: shortcodes.php:228
+msgid "hasn't viewed any lessons yet."
+msgstr "hasn't viewed any lessons yet."
+
+#: wp-courses.php:94
+msgid "Help"
+msgstr "Help"
+
+#. Author URI of the plugin
+msgid "https://stratospheredigital.ca"
+msgstr "https://stratospheredigital.ca"
+
+#. URI of the plugin
+msgid "https://wpcoursesplugin.com"
+msgstr "https://wpcoursesplugin.com"
+
+#: init/enqueue.php:33
+msgid "Last"
+msgstr "Last"
+
+#: shortcodes.php:198
+msgid "Last Viewed Lesson"
+msgstr "Last Viewed Lesson"
+
+#: shortcodes.php:198
+msgid "Last Viewed Quiz"
+msgstr "Last Viewed Quiz"
+
+#: admin/admin-nav-menu.php:10
+msgid "Leave a Review"
+msgstr "Leave a Review"
+
+#: admin/columns.php:8
+msgid "Lesson"
+msgstr "Lesson"
+
+#: classes/class-wp-courses.php:172
+msgid "Lesson Attachments"
+msgstr "Lesson Attachments"
+
+#: functions/functions.php:119 functions/functions.php:160
+msgid "Lesson Name"
+msgstr "Lesson Name"
+
+#: admin/lesson-meta.php:171
+msgid "Lesson Restriction"
+msgstr "Lesson Restriction"
+
+#: admin/lesson-meta.php:193
+msgid "Lesson Restriction Options Disabled if Membership Level(s) Checked"
+msgstr "Lesson Restriction Options Disabled if Membership Level(s) Checked"
+
+#. id
+#: admin/lesson-meta.php:10
+msgid "Lesson Video"
+msgstr "Lesson Video"
+
+#: init/cp-types.php:81
+msgid "Lessons"
+msgstr "Lessons"
+
+#: admin/admin-nav-menu.php:31
+msgid "Lessons and Modules"
+msgstr "Lessons and Modules"
+
+#: shortcodes.php:84 templates/template-parts/course-meta.php:15
+msgid "Level"
+msgstr "Level"
+
+#: init/enqueue.php:28
+msgid "Loading..."
+msgstr "Loading"
+
+#: templates/wpc-single-lesson.php:31
+msgid "Log in"
+msgstr "Log in"
+
+#: admin/course-meta.php:33
+msgid "Manage Course Lessons"
+msgstr "Manage Course Lessons"
+
+#: admin/admin-nav-menu.php:23
+msgid "Manage Courses"
+msgstr "Manage Courses"
+
+#: admin/admin-nav-menu.php:33
+msgid "Manage Lessons"
+msgstr "Manage Lessons"
+
+#: classes/class-wp-courses.php:155 init/enqueue.php:23
+msgid "Mark Completed"
+msgstr "Mark Completed"
+
+#: init/cp-types.php:146
+msgid "Modules"
+msgstr "Modules"
+
+#. Author of the plugin
+msgid "Myles English"
+msgstr "Myles English"
+
+#: admin/wpc-admin-student-table.php:90 admin/wpc-admin-student-table.php:113
+msgid "Name"
+msgstr "Name"
+
+#: templates/template-parts/course-filters.php:15
+msgid "Newest"
+msgstr "Newest"
+
+#: admin/wpc-admin-student-table.php:79 classes/class-wp-courses.php:143
+#: init/enqueue.php:34
+msgid "Next"
+msgstr "Next"
+
+#: shortcodes.php:226
+msgid "Next Lesson"
+msgstr "Next Lesson"
+
+#: init/enqueue.php:24
+msgid "No data available in table"
+msgstr "No data available in table"
+
+#: init/enqueue.php:31
+msgid "No matching records found"
+msgstr "No matching records found"
+
+#: wp-courses.php:159 admin/course-meta.php:81
+msgid "None"
+msgstr "None"
+
+#: admin/requirements-meta.php:132 init/enqueue.php:78
+msgid "none"
+msgstr "none"
+
+#: templates/template-parts/course-filters.php:16
+msgid "Oldest"
+msgstr "Oldest"
+
+#: admin/admin-nav-menu.php:19
+msgid "Options"
+msgstr "Options"
+
+#: templates/wpc-single-lesson.php:31
+msgid "or"
+msgstr "or"
+
+#: admin/admin-menu.php:385 admin/admin-nav-menu.php:26
+msgid "Order Courses"
+msgstr "Order Courses"
+
+#: admin/admin-menu.php:350 admin/admin-nav-menu.php:35
+msgid "Order Lessons and Manage Modules"
+msgstr "Order Lessons and Manage Modules"
+
+#: admin/requirements-meta.php:157 init/enqueue.php:79
+msgid "Percent"
+msgstr "Percent"
+
+#: admin/wpc-admin-student-table.php:78
+msgid "Prev"
+msgstr "Prev"
+
+#: classes/class-wp-courses.php:138 init/enqueue.php:35
+msgid "Previous"
+msgstr "Previous"
+
+#: shortcodes.php:225
+msgid "Previous Lesson"
+msgstr "Previous Lesson"
+
+#: init/enqueue.php:29
+msgid "Processing..."
+msgstr "Processing..."
+
+#: shortcodes.php:256 admin/admin-menu.php:276
+msgid "Progress"
+msgstr "Progress"
+
+#: templates/wpc-archive-teacher.php:13
+msgid "Read More"
+msgstr "Read More"
+
+#: templates/wpc-single-lesson.php:31
+msgid "Register"
+msgstr "Register"
+
+#: admin/requirements-meta.php:12
+msgid "Requirements"
+msgstr "Requirements"
+
+#: admin/columns.php:10
+msgid "Restriction"
+msgstr "Restriction"
+
+#: admin/admin-menu.php:362
+msgid "Save"
+msgstr "Save"
+
+#: admin/requirements-meta.php:47 init/enqueue.php:69
+msgid "Scores"
+msgstr "Scores"
+
+#: init/enqueue.php:30 templates/template-parts/course-filters.php:28
+#: templates/template-parts/course-filters.php:29
+msgid "Search"
+msgstr "Search"
+
+#: admin/admin-menu.php:357
+msgid "Select"
+msgstr "Select"
+
+#: wp-courses.php:93
+msgid "Settings"
+msgstr "Settings"
+
+#: templates/template-parts/course-filters.php:11
+msgid "Sort by"
+msgstr "Sort by"
+
+#: classes/class-wp-courses.php:97
+msgid "Start Course"
+msgstr "Start Course"
+
+#: admin/admin-nav-menu.php:40
+#| msgid "Students and Progress"
+msgid "Student Progress"
+msgstr "Student Progress"
+
+#: shortcodes.php:90 templates/template-parts/course-meta.php:8
+msgid "Teacher"
+msgstr "Teacher"
+
+#: admin/admin-nav-menu.php:39 init/cp-types.php:211
+#: templates/template-parts/course-meta.php:8
+msgid "Teachers"
+msgstr "Teachers"
+
+#: init/enqueue.php:25
+msgid "There are 0 entries"
+msgstr "There are 0 entries"
+
+#: shortcodes.php:168
+msgid "There are no courses"
+msgstr "There are no courses"
+
+#: templates/wpc-archive-teacher.php:18
+msgid "There are no teachers"
+msgstr "There are no teachers"
+
+#: functions/requirements.php:23
+msgid "There is nothing to order"
+msgstr "There is nothing to order"
+
+#: functions/functions.php:121 functions/functions.php:162
+msgid "Time"
+msgstr "Time"
+
+#: admin/requirements-meta.php:162 init/enqueue.php:80
+msgid "Times"
+msgstr "Times"
+
+#: functions/functions.php:73 functions/functions.php:93
+msgid "Title"
+msgstr "Title"
+
+#: templates/wpc-single-lesson.php:31
+msgid "to view this lesson."
+msgstr "to view this lesson."
+
+#: admin/admin-nav-menu.php:8
+msgid "Tutorials and Help"
+msgstr "Tutorials and Help"
+
+#: wp-courses.php:95 admin/admin-nav-menu.php:4
+msgid "Upgrade to Premium"
+msgstr "Upgrade to Premium"
+
+#: admin/lesson-meta.php:32
+msgid "Video Embed Code"
+msgstr "Video Embed Code"
+
+#: admin/course-meta.php:60
+msgid "Video Embed Code (iframe)"
+msgstr "Video Embed Code (iframe)"
+
+#: shortcodes.php:197
+msgid "View Lesson"
+msgstr "View Lesson"
+
+#: shortcodes.php:197
+msgid "View Quiz"
+msgstr "View Quiz"
+
+#: shortcodes.php:120 shortcodes.php:250 classes/class-wp-courses.php:18
+#: templates/template-parts/course-meta.php:53
+msgid "Viewed"
+msgstr "Viewed"
+
+#: functions/functions.php:110
+msgid "viewed"
+msgstr "viewed"
+
+#: admin/admin-menu.php:299 admin/admin-menu.php:310
+msgid "Viewed Lessons"
+msgstr "Viewed Lessons"
+
+#: functions/functions.php:73 functions/functions.php:93
+msgid "Viewed Percent"
+msgstr "Viewed Percent"
+
+#: admin/requirements-meta.php:45 init/enqueue.php:67
+msgid "Views"
+msgstr "Views"
+
+#: admin/requirements-meta.php:43 init/enqueue.php:66
+msgid "When Someone"
+msgstr "When Someone"
+
+#. Name of the plugin
+msgid "WP Courses LMS"
+msgstr "WP Courses LMS"
+
+#: admin/widgets.php:9
+msgid "WP Courses Widget"
+msgstr "WP Courses Widget"
+
+#: shortcodes.php:182
+msgid "You must be logged in to view your profile"
+msgstr "You must be logged in to view your profile"
+
+#: functions/requirements.php:399
+msgid "You've Received One or More Awards"
+msgstr "You've Received One or More Awards"

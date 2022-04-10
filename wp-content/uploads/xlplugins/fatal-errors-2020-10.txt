@@ -1,0 +1,22 @@
+
+Oct 14, 2020 20.23.02: Uncaught Error: Class 'Essential_Addons_Elementor\Classes\Bootstrap' not found in /home/research/public_html/wp-content/plugins/essential-addons-for-elementor-lite/essential_adons_elementor.php:52
+Stack trace:
+#0 /home/research/public_html/wp-includes/class-wp-hook.php(287): {closure}('')
+#1 /home/research/public_html/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#2 /home/research/public_html/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /home/research/public_html/wp-settings.php(409): do_action('plugins_loaded')
+#4 /home/research/public_html/wp-config.php(93): require_once('/home/research/...')
+#5 /home/research/public_html/wp-load.php(37): require_once('/home/research/...')
+#6 /home/research/public_html/wp-blog-header.php(13): require_once('/home/research/...')
+#7 /home/research/public_html/index.php(17): require('/home/research/...')
+#8 {main}
+  thrown
+
+Oct 14, 2020 20.23.20: Uncaught Error: Class 'Automattic\WooCommerce\Admin\Notes\WC_Admin_Notes_Learn_More_About_Product_Settings' not found in /home/research/public_html/wp-content/plugins/woocommerce/packages/woocommerce-admin/src/Events.php:100
+Stack trace:
+#0 /home/research/public_html/wp-includes/class-wp-hook.php(287): Automattic\WooCommerce\Admin\Events->do_wc_admin_daily()
+#1 /home/research/public_html/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /home/research/public_html/wp-includes/plugin.php(544): WP_Hook->do_action(Array)
+#3 /home/research/public_html/wp-cron.php(138): do_action_ref_array('wc_admin_daily', Array)
+#4 {main}
+  thrown

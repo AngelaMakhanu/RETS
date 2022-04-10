@@ -1,0 +1,28 @@
+2022-03-25T11:17:56+00:00 CRITICAL Allowed memory size of 268435456 bytes exhausted (tried to allocate 23073040 bytes) in /home/research/public_html/wp-content/plugins/elementor/core/common/modules/ajax/module.php on line 265
+
+2022-03-25T11:19:53+00:00 CRITICAL Allowed memory size of 268435456 bytes exhausted (tried to allocate 20124040 bytes) in /home/research/public_html/wp-content/plugins/elementor/core/common/modules/ajax/module.php on line 265
+
+2022-03-25T11:43:08+00:00 CRITICAL Allowed memory size of 268435456 bytes exhausted (tried to allocate 3487640 bytes) in /home/research/public_html/wp-includes/class-wp-image-editor-gd.php on line 98
+
+2022-03-25T12:53:36+00:00 CRITICAL Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/research/public_html/wp-includes/meta.php on line 1190
+
+2022-03-25T13:27:12+00:00 CRITICAL Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/research/public_html/wp-includes/meta.php on line 1190
+
+2022-03-25T13:29:34+00:00 CRITICAL Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/research/public_html/wp-includes/meta.php on line 1190
+
+2022-03-25T13:39:46+00:00 CRITICAL Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/research/public_html/wp-includes/meta.php on line 1190
+
+2022-03-25T13:41:21+00:00 CRITICAL Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/research/public_html/wp-includes/wp-db.php on line 2128
+
+2022-03-25T13:44:15+00:00 CRITICAL Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/research/public_html/wp-includes/wp-db.php on line 2128
+
+2022-03-25T13:46:04+00:00 CRITICAL Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/research/public_html/wp-includes/meta.php on line 1190
+
+2022-03-25T17:34:07+00:00 CRITICAL Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/research/public_html/wp-includes/meta.php on line 1190
+
+2022-03-25T17:56:15+00:00 CRITICAL Allowed memory size of 268435456 bytes exhausted (tried to allocate 81920 bytes) in /home/research/public_html/wp-includes/meta.php on line 1183
+
+2022-03-25T18:51:14+00:00 CRITICAL Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/research/public_html/wp-includes/meta.php on line 1190
+
+2022-03-25T20:17:17+00:00 CRITICAL Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/research/public_html/wp-includes/meta.php on line 1190
+

@@ -1,0 +1,10 @@
+[03-Jan-2022 23:24:06 UTC] PHP Warning:  Use of undefined constant ABSPATH - assumed 'ABSPATH' (this will throw an Error in a future version of PHP) in /home/research/public_html/wp-includes/blocks/index.php on line 9
+[03-Jan-2022 23:24:06 UTC] PHP Warning:  Use of undefined constant WPINC - assumed 'WPINC' (this will throw an Error in a future version of PHP) in /home/research/public_html/wp-includes/blocks/index.php on line 9
+[03-Jan-2022 23:24:06 UTC] PHP Warning:  require(ABSPATHWPINC/blocks/archives.php): failed to open stream: No such file or directory in /home/research/public_html/wp-includes/blocks/index.php on line 9
+[03-Jan-2022 23:24:06 UTC] PHP Warning:  require(ABSPATHWPINC/blocks/archives.php): failed to open stream: No such file or directory in /home/research/public_html/wp-includes/blocks/index.php on line 9
+[03-Jan-2022 23:24:06 UTC] PHP Fatal error:  require(): Failed opening required 'ABSPATHWPINC/blocks/archives.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/research/public_html/wp-includes/blocks/index.php on line 9
+[12-Jan-2022 07:22:23 UTC] PHP Warning:  Use of undefined constant ABSPATH - assumed 'ABSPATH' (this will throw an Error in a future version of PHP) in /home/research/public_html/wp-includes/blocks/index.php on line 9
+[12-Jan-2022 07:22:23 UTC] PHP Warning:  Use of undefined constant WPINC - assumed 'WPINC' (this will throw an Error in a future version of PHP) in /home/research/public_html/wp-includes/blocks/index.php on line 9
+[12-Jan-2022 07:22:23 UTC] PHP Warning:  require(ABSPATHWPINC/blocks/archives.php): failed to open stream: No such file or directory in /home/research/public_html/wp-includes/blocks/index.php on line 9
+[12-Jan-2022 07:22:23 UTC] PHP Warning:  require(ABSPATHWPINC/blocks/archives.php): failed to open stream: No such file or directory in /home/research/public_html/wp-includes/blocks/index.php on line 9
+[12-Jan-2022 07:22:23 UTC] PHP Fatal error:  require(): Failed opening required 'ABSPATHWPINC/blocks/archives.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/research/public_html/wp-includes/blocks/index.php on line 9

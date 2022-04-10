@@ -1,0 +1,19 @@
+2022-03-22T13:12:03+00:00 CRITICAL Allowed memory size of 268435456 bytes exhausted (tried to allocate 22893176 bytes) in /home/research/public_html/wp-content/plugins/elementor/core/common/modules/ajax/module.php on line 265
+
+2022-03-22T13:14:42+00:00 CRITICAL Uncaught Error: Call to undefined method WP_Error::get_data() in /home/research/public_html/wp-content/themes/astra/inc/compatibility/class-astra-elementor.php:300
+Stack trace:
+#0 /home/research/public_html/wp-includes/class-wp-hook.php(307): Elementor\Astra_Elementor->elementor_add_theme_colors(Object(WP_Error), Array, Object(WP_REST_Request))
+#1 /home/research/public_html/wp-includes/plugin.php(189): WP_Hook->apply_filters(Object(WP_Error), Array)
+#2 /home/research/public_html/wp-includes/rest-api/class-wp-rest-server.php(1166): apply_filters('rest_request_af...', Object(WP_Error), Array, Object(WP_REST_Request))
+#3 /home/research/public_html/wp-includes/rest-api/class-wp-rest-server.php(988): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/elementor/v1/g...', Array, Object(WP_Error))
+#4 /home/research/public_html/wp-includes/rest-api/class-wp-rest-server.php(414): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#5 /home/research/public_html/wp-includes/rest-api.php(386): WP_REST_Server->ser in /home/research/public_html/wp-content/themes/astra/inc/compatibility/class-astra-elementor.php on line 300
+
+2022-03-22T13:37:36+00:00 CRITICAL Allowed memory size of 268435456 bytes exhausted (tried to allocate 22893176 bytes) in /home/research/public_html/wp-content/plugins/elementor/core/common/modules/ajax/module.php on line 265
+
+2022-03-22T13:42:08+00:00 CRITICAL Allowed memory size of 268435456 bytes exhausted (tried to allocate 22893176 bytes) in /home/research/public_html/wp-content/plugins/elementor/core/common/modules/ajax/module.php on line 265
+
+2022-03-22T13:43:18+00:00 CRITICAL Allowed memory size of 268435456 bytes exhausted (tried to allocate 22893176 bytes) in /home/research/public_html/wp-content/plugins/elementor/core/common/modules/ajax/module.php on line 265
+
+2022-03-22T15:17:08+00:00 CRITICAL Allowed memory size of 268435456 bytes exhausted (tried to allocate 1372160 bytes) in /home/research/public_html/wp-content/plugins/elementor/core/common/modules/ajax/module.php on line 265
+

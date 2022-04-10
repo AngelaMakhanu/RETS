@@ -1,0 +1,6 @@
+2022-03-27T08:46:08+00:00 CRITICAL Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/research/public_html/wp-includes/wp-db.php on line 2128
+
+2022-03-27T10:07:23+00:00 CRITICAL Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/research/public_html/wp-includes/wp-db.php on line 2128
+
+2022-03-27T10:07:54+00:00 CRITICAL Allowed memory size of 268435456 bytes exhausted (tried to allocate 20480 bytes) in /home/research/public_html/wp-includes/wp-db.php on line 2128
+

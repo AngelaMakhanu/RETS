@@ -1,0 +1,63 @@
+2022-03-20T15:53:54+00:00 CRITICAL Allowed memory size of 268435456 bytes exhausted (tried to allocate 36864 bytes) in /home/research/public_html/wp-includes/wp-db.php on line 2022
+
+2022-03-20T15:58:23+00:00 CRITICAL Allowed memory size of 268435456 bytes exhausted (tried to allocate 36864 bytes) in /home/research/public_html/wp-includes/wp-db.php on line 2022
+
+2022-03-20T20:59:45+00:00 CRITICAL Allowed memory size of 268435456 bytes exhausted (tried to allocate 22892952 bytes) in /home/research/public_html/wp-content/plugins/elementor/core/common/modules/ajax/module.php on line 265
+
+2022-03-20T21:03:20+00:00 CRITICAL Allowed memory size of 268435456 bytes exhausted (tried to allocate 22892952 bytes) in /home/research/public_html/wp-content/plugins/elementor/core/common/modules/ajax/module.php on line 265
+
+2022-03-20T21:06:15+00:00 CRITICAL Allowed memory size of 268435456 bytes exhausted (tried to allocate 22892952 bytes) in /home/research/public_html/wp-content/plugins/elementor/core/common/modules/ajax/module.php on line 265
+
+2022-03-20T21:08:55+00:00 CRITICAL Allowed memory size of 268435456 bytes exhausted (tried to allocate 22892952 bytes) in /home/research/public_html/wp-content/plugins/elementor/core/common/modules/ajax/module.php on line 265
+
+2022-03-20T21:26:48+00:00 CRITICAL Allowed memory size of 268435456 bytes exhausted (tried to allocate 20975616 bytes) in /home/research/public_html/wp-includes/functions.php on line 3955
+
+2022-03-20T21:32:47+00:00 CRITICAL Allowed memory size of 268435456 bytes exhausted (tried to allocate 20975616 bytes) in /home/research/public_html/wp-includes/functions.php on line 3955
+
+2022-03-20T21:33:23+00:00 CRITICAL Allowed memory size of 268435456 bytes exhausted (tried to allocate 22892952 bytes) in /home/research/public_html/wp-content/plugins/elementor/core/common/modules/ajax/module.php on line 265
+
+2022-03-20T21:46:32+00:00 CRITICAL Allowed memory size of 268435456 bytes exhausted (tried to allocate 20975616 bytes) in /home/research/public_html/wp-includes/functions.php on line 3955
+
+2022-03-20T21:50:02+00:00 CRITICAL Allowed memory size of 268435456 bytes exhausted (tried to allocate 20975616 bytes) in /home/research/public_html/wp-includes/functions.php on line 3955
+
+2022-03-20T21:51:04+00:00 CRITICAL Allowed memory size of 268435456 bytes exhausted (tried to allocate 20975616 bytes) in /home/research/public_html/wp-includes/functions.php on line 3955
+
+2022-03-20T21:55:14+00:00 CRITICAL Allowed memory size of 268435456 bytes exhausted (tried to allocate 20975616 bytes) in /home/research/public_html/wp-includes/functions.php on line 3955
+
+2022-03-20T22:03:09+00:00 CRITICAL Allowed memory size of 268435456 bytes exhausted (tried to allocate 22892952 bytes) in /home/research/public_html/wp-content/plugins/elementor/core/common/modules/ajax/module.php on line 265
+
+2022-03-20T22:08:43+00:00 CRITICAL Allowed memory size of 268435456 bytes exhausted (tried to allocate 20975616 bytes) in /home/research/public_html/wp-includes/functions.php on line 3955
+
+2022-03-20T22:14:34+00:00 CRITICAL Allowed memory size of 268435456 bytes exhausted (tried to allocate 22892952 bytes) in /home/research/public_html/wp-content/plugins/elementor/core/common/modules/ajax/module.php on line 265
+
+2022-03-20T22:16:24+00:00 CRITICAL Allowed memory size of 268435456 bytes exhausted (tried to allocate 22892952 bytes) in /home/research/public_html/wp-content/plugins/elementor/core/common/modules/ajax/module.php on line 265
+
+2022-03-20T22:18:19+00:00 CRITICAL Allowed memory size of 268435456 bytes exhausted (tried to allocate 22892952 bytes) in /home/research/public_html/wp-content/plugins/elementor/core/common/modules/ajax/module.php on line 265
+
+2022-03-20T22:23:54+00:00 CRITICAL Allowed memory size of 268435456 bytes exhausted (tried to allocate 22892952 bytes) in /home/research/public_html/wp-content/plugins/elementor/core/common/modules/ajax/module.php on line 265
+
+2022-03-20T22:28:27+00:00 CRITICAL Allowed memory size of 268435456 bytes exhausted (tried to allocate 22892952 bytes) in /home/research/public_html/wp-content/plugins/elementor/core/common/modules/ajax/module.php on line 265
+
+2022-03-20T22:35:33+00:00 CRITICAL Allowed memory size of 268435456 bytes exhausted (tried to allocate 22893176 bytes) in /home/research/public_html/wp-content/plugins/elementor/core/common/modules/ajax/module.php on line 265
+
+2022-03-20T22:36:49+00:00 CRITICAL Uncaught Error: Call to undefined method WP_Error::get_data() in /home/research/public_html/wp-content/themes/astra/inc/compatibility/class-astra-elementor.php:300
+Stack trace:
+#0 /home/research/public_html/wp-includes/class-wp-hook.php(307): Elementor\Astra_Elementor->elementor_add_theme_colors(Object(WP_Error), Array, Object(WP_REST_Request))
+#1 /home/research/public_html/wp-includes/plugin.php(189): WP_Hook->apply_filters(Object(WP_Error), Array)
+#2 /home/research/public_html/wp-includes/rest-api/class-wp-rest-server.php(1166): apply_filters('rest_request_af...', Object(WP_Error), Array, Object(WP_REST_Request))
+#3 /home/research/public_html/wp-includes/rest-api/class-wp-rest-server.php(988): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/elementor/v1/g...', Array, Object(WP_Error))
+#4 /home/research/public_html/wp-includes/rest-api/class-wp-rest-server.php(414): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#5 /home/research/public_html/wp-includes/rest-api.php(386): WP_REST_Server->ser in /home/research/public_html/wp-content/themes/astra/inc/compatibility/class-astra-elementor.php on line 300
+
+2022-03-20T22:38:10+00:00 CRITICAL Allowed memory size of 268435456 bytes exhausted (tried to allocate 22893176 bytes) in /home/research/public_html/wp-content/plugins/elementor/core/common/modules/ajax/module.php on line 265
+
+2022-03-20T22:40:48+00:00 CRITICAL Allowed memory size of 268435456 bytes exhausted (tried to allocate 22893176 bytes) in /home/research/public_html/wp-content/plugins/elementor/core/common/modules/ajax/module.php on line 265
+
+2022-03-20T23:21:20+00:00 CRITICAL Allowed memory size of 268435456 bytes exhausted (tried to allocate 22893176 bytes) in /home/research/public_html/wp-content/plugins/elementor/core/common/modules/ajax/module.php on line 265
+
+2022-03-20T23:36:09+00:00 CRITICAL Allowed memory size of 268435456 bytes exhausted (tried to allocate 22893176 bytes) in /home/research/public_html/wp-content/plugins/elementor/core/common/modules/ajax/module.php on line 265
+
+2022-03-20T23:48:18+00:00 CRITICAL Allowed memory size of 268435456 bytes exhausted (tried to allocate 22893176 bytes) in /home/research/public_html/wp-content/plugins/elementor/core/common/modules/ajax/module.php on line 265
+
+2022-03-20T23:48:52+00:00 CRITICAL Allowed memory size of 268435456 bytes exhausted (tried to allocate 22893176 bytes) in /home/research/public_html/wp-content/plugins/elementor/core/common/modules/ajax/module.php on line 265
+

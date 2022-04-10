@@ -1,0 +1,24 @@
+
+Nov 02, 2020 13.00.36: Uncaught Error: Class 'Essential_Addons_Elementor\Classes\Migration' not found in /home/research/public_html/wp-content/plugins/essential-addons-for-elementor-lite/essential_adons_elementor.php:60
+Stack trace:
+#0 /home/research/public_html/wp-includes/class-wp-hook.php(287): {closure}('')
+#1 /home/research/public_html/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#2 /home/research/public_html/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /home/research/public_html/wp-settings.php(568): do_action('wp_loaded')
+#4 /home/research/public_html/wp-config.php(93): require_once('/home/research/...')
+#5 /home/research/public_html/wp-load.php(37): require_once('/home/research/...')
+#6 /home/research/public_html/wp-cron.php(44): require_once('/home/research/...')
+#7 {main}
+  thrown
+
+Nov 19, 2020 14.44.39: Uncaught Error: Class 'Essential_Addons_Elementor\Classes\Migration' not found in /home/research/public_html/wp-content/plugins/essential-addons-for-elementor-lite/essential_adons_elementor.php:60
+Stack trace:
+#0 /home/research/public_html/wp-includes/class-wp-hook.php(287): {closure}('')
+#1 /home/research/public_html/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#2 /home/research/public_html/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#3 /home/research/public_html/wp-settings.php(568): do_action('wp_loaded')
+#4 /home/research/public_html/wp-config.php(93): require_once('/home/research/...')
+#5 /home/research/public_html/wp-load.php(37): require_once('/home/research/...')
+#6 /home/research/public_html/wp-cron.php(44): require_once('/home/research/...')
+#7 {main}
+  thrown

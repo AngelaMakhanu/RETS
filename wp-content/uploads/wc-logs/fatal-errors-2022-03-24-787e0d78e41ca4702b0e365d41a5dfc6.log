@@ -1,0 +1,18 @@
+2022-03-24T09:10:53+00:00 CRITICAL Allowed memory size of 268435456 bytes exhausted (tried to allocate 20088448 bytes) in /home/research/public_html/wp-content/plugins/elementor/core/common/modules/ajax/module.php on line 265
+
+2022-03-24T09:14:45+00:00 CRITICAL Allowed memory size of 268435456 bytes exhausted (tried to allocate 20088448 bytes) in /home/research/public_html/wp-content/plugins/elementor/core/common/modules/ajax/module.php on line 265
+
+2022-03-24T09:17:08+00:00 CRITICAL Allowed memory size of 268435456 bytes exhausted (tried to allocate 20088448 bytes) in /home/research/public_html/wp-content/plugins/elementor/core/common/modules/ajax/module.php on line 265
+
+2022-03-24T09:18:23+00:00 CRITICAL Allowed memory size of 268435456 bytes exhausted (tried to allocate 20088448 bytes) in /home/research/public_html/wp-content/plugins/elementor/core/common/modules/ajax/module.php on line 265
+
+2022-03-24T09:20:33+00:00 CRITICAL Allowed memory size of 268435456 bytes exhausted (tried to allocate 20088448 bytes) in /home/research/public_html/wp-content/plugins/elementor/core/common/modules/ajax/module.php on line 265
+
+2022-03-24T09:23:19+00:00 CRITICAL Allowed memory size of 268435456 bytes exhausted (tried to allocate 20088448 bytes) in /home/research/public_html/wp-content/plugins/elementor/core/common/modules/ajax/module.php on line 265
+
+2022-03-24T09:25:24+00:00 CRITICAL Allowed memory size of 268435456 bytes exhausted (tried to allocate 20124040 bytes) in /home/research/public_html/wp-content/plugins/elementor/core/common/modules/ajax/module.php on line 265
+
+2022-03-24T09:40:30+00:00 CRITICAL Allowed memory size of 268435456 bytes exhausted (tried to allocate 20124040 bytes) in /home/research/public_html/wp-content/plugins/elementor/core/common/modules/ajax/module.php on line 265
+
+2022-03-24T09:42:10+00:00 CRITICAL Allowed memory size of 268435456 bytes exhausted (tried to allocate 1241088 bytes) in /home/research/public_html/wp-content/plugins/elementor/core/common/modules/ajax/module.php on line 265
+

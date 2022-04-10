@@ -1,0 +1,1126 @@
+/*
+** Floating Toolbar and Front End Options Toolbar
+*/
+
+.wpc-toolbar-save {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 0;
+    color: white;
+    background: rgb(18, 199, 149);
+    cursor: pointer;
+}
+
+.wpc-toolbar-save:hover {
+    background: rgb(24 224 169);
+}
+
+.wpc-row-settings-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+.wpc-row-settings-icon i {
+    background: #4a4a4a;
+    color: white;
+    padding: 10px;
+    border-bottom-left-radius: 4px;
+}
+
+.wpc-builder-selectable {
+    cursor: pointer;
+    position: relative;
+}
+
+.wpc-builder-selectable:hover {
+    outline: 3px solid #4a4a4a;
+}
+
+.wpc-builder-selectable:hover .wpc-row-settings-icon {
+    display: block;
+    font-size: 18px;
+}
+
+.wpc-floating-toolbar {
+    min-width: 420px;
+    background: white;
+    position: absolute;
+    border-radius: 4px;
+    overflow: hidden;
+    z-index: 9999;
+    box-shadow: rgb(0 0 0 / 20%) 3px 3px 15px;
+    background-color: #f5f5f5;
+}
+
+.wpc-tools-tab {
+    background-color: #e21772;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.wpc-tools-tab-active {
+    background-color: #ff308d;
+}
+
+#wpc-toolbar-textarea {
+    width: 100%;
+    min-height: 240px;
+    width: calc(100% - 1px);
+    background-color: #f5f5f5;
+    border: 0;
+    padding: 10px;
+}
+
+.wpc-tools-tabs {
+    margin: 0;
+    overflow: hidden;
+}
+
+.wpc-tools-tab {
+    margin-bottom: 6px;
+    width: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    float: left;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+
+.wpc-range-option {
+    overflow: hidden;
+}
+
+.wpc-range-input {
+    width: 25% !important;
+    float: right !important;
+    padding: 5px !important;
+}
+
+.wpc-range {
+    width: 66% !important;
+    padding: 10px;
+}
+
+.wpc-accordion-option-header {
+    background: #5b296a;
+    padding: 20px 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+    margin: 0;
+}
+
+.wpc-accordion-option-content {
+    padding: 10px;
+    background-color: #fff;
+}
+
+.wpc-accordion-option-content input[type="text"], .wpc-accordion-option-content input[type="number"] {
+    background-color: #f5f5f5;
+    border: 0;
+}
+
+.wpc-accordion-option-content label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.wpc-accordion-option-content select {
+    width: calc(100% - 2px);
+    background-color: #f5f5f5;
+    border: 0;
+    padding: 10px;
+}
+
+.wpc-accordion-single-option {
+    border-bottom: 1px solid #f5f5f5;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    overflow: hidden;
+}
+
+.wpc-accordion-single-option:first-of-type {
+    padding-top: 0;
+}
+
+.wpc-accordion-single-option:last-of-type {
+    padding-bottom: 0;
+    border: 0;
+}
+
+#wpc-ajax-save {
+    display: inline-block;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    background: #12ad80;
+    color: white;
+    border-radius: 4px;
+    box-shadow: 0px 5px 9px rgba(0,0,0,0.2);
+    z-index: 999;
+    line-height: 1em;
+}
+
+.wpc-spacing-wrapper {
+    padding: 5px;
+    display: inline-block;
+    width: calc(25% - 4px);
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.wpc-spacing-wrapper label {
+    text-align: center;
+    display: block;
+}
+
+.wpc-spacing-input {
+    width: 100%;
+}
+
+/*
+** Tools
+*/
+
+.wpc-builder-selected {
+    background-color: rgb(35 209 159 / 26%);
+}
+
+.wpc-builder-selected-button {
+    background-color: #0071a1 !important;
+    color: white !important;
+}
+
+.wpc-toolbar-section .iris-picker {
+    position: absolute;
+    z-index: 2;
+}
+
+.wpc-toolbar-section {
+    float: left;
+    clear: right;
+    padding: 5px 10px;
+    border-right: 1px solid lightgray;
+}
+
+/*
+** Grid
+*/
+
+.wpc-container, .wpc-row {
+    overflow: hidden;
+}
+
+.wpc-2, .wpc-4, .wpc-6, .wpc-8, .wpc-10 {
+    float: left;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin-right: 20px;
+}
+
+.wpc-2 {
+    width: calc(20% - 20px);
+}
+
+.wpc-4 {
+    width: calc(33.33% - 20px);
+}
+
+.wpc-6 {
+    width: calc(50% - 20px);
+}
+
+.wpc-8 {
+    width: calc(66.66% - 20px);
+}
+
+.wpc-10 {
+    width: calc(80% - 20px);
+}
+
+@media screen and (max-width: 980px){
+    .wpc-2, .wpc-2:last-of-type, .wpc-4, .wpc-4:last-of-type, .wpc-6, .wpc-6:last-of-type, .wpc-8, .wpc-8:last-of-type  {
+        float: none;
+        width: 100%;
+        margin-right: 0;
+    }   
+}
+
+.wpc-row > div:last-of-type {
+    overflow: hidden;
+    margin-right: 0;
+    width: auto;
+    float: none;
+}
+
+/*
+** Admin Boxes
+*/
+
+.wpc-admin-box-left {
+    float: left;
+    margin-right: 20px;
+    width: calc(66.6% - 20px);
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.wpc-admin-box-right {
+    float: left;
+    width: 33.3%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.wpc-admin-box-wrapper {
+    overflow: hidden;
+}
+
+.wpc-admin-box-content {
+    padding: 20px 0 0;
+}
+
+.wpc-admin-box-footer {
+    margin: 0px -20px -20px;
+    padding: 20px;
+    background-color: #f0f0f1;
+}
+
+.wpc-admin-box {
+    background: white;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 3px 3px 10px rgb(0 0 0 / 10%);
+    margin-bottom: 20px;
+}
+
+.wpc-admin-box p, .wpc-admin-box .button {
+    font-size: 16px;
+}
+
+.wpc-admin-box h2, .wpc-admin-box p {
+    color: #4e4e4e;
+}
+
+.wpc-admin-box .wpc-video-wrapper {
+    margin-top: 20px;
+}
+
+.wpc-admin-box-header {
+    border-bottom: 1px solid lightgray;
+    margin: -20px -20px 0 -20px;
+    padding: 20px;
+    font-size: 22px;
+    color: #59296b;
+}
+
+.wpc-admin-box .nav-tab {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background-color: white;
+}
+
+.wpc-admin-box .nav-tab-active {
+    background-color: #f0f0f1;
+}
+
+.wpc-admin-box .nav-tab:hover {
+    color: #fcd46c;
+}
+
+.wpc-tab-content {
+    border: 1px solid #c3c4c7;
+    padding: 20px;
+    margin-top: -1px;
+    margin-bottom: 30px;
+}
+
+.wpc-tab-content h2 {
+    margin-top: 0;
+}
+
+.wpc-tab-content .dataTables_wrapper th {
+    background: #59296b;
+    color: white;
+}
+
+/*
+** Select2 Fix
+*/
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    padding-left: 20px !important;
+}
+.select2-container .select2-search--inline {
+    float: none !important;
+}
+/*
+** Charts
+*/
+
+.wpc-chart-filter {
+    margin-bottom: 10px;
+}
+
+/*
+** General
+*/
+
+.wpc-hide {
+    display: none;
+}
+
+.wpc-pointer {
+    cursor: pointer;
+}
+
+.wpc-fw-input {
+    width: calc(100% - 1px);
+}
+
+.wpc-admin-h1 {
+    margin-bottom: 10px !important;
+}
+
+.wpc-not-editable {
+    cursor: pointer;
+}
+
+.wpc-admin-meta-lg {
+    font-size: 60px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.wpc-admin-select {
+    max-width: 100%;
+}
+
+.wpc-lesson-meta-course-select {
+    max-width: 200px !important;
+}
+
+.course-select {
+    max-width: 100% !important;
+}
+
+#wpc-ajax-save {
+    display: inline-block;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    background: #12ad80;
+    color: white;
+    border-radius: 4px;
+    box-shadow: 0px 5px 9px rgba(0,0,0,0.2);
+    z-index: 999;
+}
+
+/*
+** Premium
+*/
+
+.wp-submenu a[href="admin.php?page=wpc_premium"] {
+    background-color: #e21772;
+    color: #fff !important;
+}
+
+.wp-submenu a[href="admin.php?page=wpc_premium"]:hover {
+    background-color: #009ee5 !important;
+}
+
+#wpc-premium-box-img {
+    max-width: 100%;
+}
+
+.wpc-premium-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.wpc-premium-table td {
+    padding: 10px;
+    border: 1px solid lightgray;
+}
+
+.wpc-premium-table tr:nth-of-type(odd) {
+    background-color: #f0f0f1;
+}
+
+.wpc-premium-table th {
+    background-color: #fff;
+}
+
+#wpc-premium-box-wrapper {
+    text-align: center;
+}
+
+#wpc-premium-box-wrapper img {
+    max-width: 300px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+/*
+** Requirements
+*/
+
+.wpc-requirement {
+    padding: 20px;
+    border: 1px solid lightgray;
+    margin-bottom: 10px;
+}
+
+.wpc-requirement select {
+    max-width: 200px;
+    margin-right: 5px;
+}
+
+.wpc-requirement input {
+    margin-right: 5px;
+}
+
+.wpc-delete-requirement {
+    margin-top: 20px !important;
+}
+
+/*
+** Progress Bar
+*/
+
+.wpc-progress-bar {
+    background-color: #d0d0d0;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.wpc-viewed-progress {
+    background-color: #23d19f !important;
+}
+
+.wpc-progress-bar-level {
+    background-color: #009ee5;
+    color: white;
+    padding: 5px 0;
+    -webkit-transition: width 1s, height 1s; /* For Safari 3.1 to 6.0 */
+    transition: width 1s, height 1s;
+}
+
+.wpc-progress-bar-text {
+    margin-left: 10px;
+    white-space: nowrap;
+}
+
+/*
+** Lesson Nav
+*/
+
+.lesson-button {
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 3px 3px 3px rgb(0 0 0 / 10%);
+    background-color: white;
+    text-decoration: none;
+    border: 1px solid lightgray;
+    overflow: hidden;
+}
+
+.lesson-button:hover {
+    background: #f5f5f5;
+}
+
+a.wpc-completed, a.wpc-viewed {
+    color: white;
+}
+
+a.wpc-viewed {
+    background-color: #23d19f;
+    border: 1px solid #12ad80;
+}
+
+a.wpc-viewed:hover {
+    background-color: #12ad80;
+}
+
+a.wpc-completed {
+    background-color: #009ee5;
+    border: 1px solid #036d9c;
+}
+
+a.wpc-completed:hover {
+    background-color: #036d9c;
+}
+
+/*
+** Pagination
+*/
+
+.wpc-admin-pagination {
+    float: right;
+    padding: 10px 0;
+}
+
+.wpc-admin-pagination .page-numbers {
+    color: #0071a1;
+    border-color: #0071a1;
+    background: #f3f5f6;
+    vertical-align: top;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 2.15384615;
+    min-height: 30px;
+    margin: 0;
+    padding: 0 10px;
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+    -webkit-appearance: none;
+    border-radius: 3px;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+.wpc-admin-pagination .current, .wpc-admin-pagination .dots {
+    color: #a0a5aa!important;
+    border-color: #ddd!important;
+    background: #f7f7f7!important;
+    box-shadow: none!important;
+    text-shadow: 0 1px 0 #fff!important;
+    cursor: default;
+    transform: none!important;
+}
+
+.wpc-admin-pagination .button {
+    position: relative;
+    top: -5px;
+}
+
+/*
+** Admin Menu
+*/
+
+.wpc-alt-admin-buttons {
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+
+.wpc-admin-nav-menu {
+    margin-right: 20px;
+}
+
+.wpc-admin-menu-item {
+    display: inline-block;
+    margin-bottom: 0;
+    padding: 5px;
+}
+
+#wpc-admin-logo-sm-wrapper {
+    padding: 13px;
+    display: inline-block; 
+}
+
+.wpc-admin-menu-item>span {
+    cursor: pointer;
+    padding-bottom: 13px !important;
+}
+
+.wpc-admin-menu-item a, .wpc-admin-menu-item>span {
+    display: block;
+    font-size: 16px;
+    padding: 15px;
+    text-decoration: none;
+    color: #59296b;
+}
+
+.wpc-submenu-toggle {
+    margin-bottom: -2px;
+}
+
+.wpc-admin-menu-item:not(:first-child) {
+    margin-left: -4px;
+}
+
+.wpc-admin-menu-item:hover > span, .wpc-admin-menu-item:hover > a {
+    color: #fcd46c;
+}
+
+.wpc-main-admin-wrapper {
+    margin-right: 20px;
+}
+
+.wpc-admin-menu-wrapper {
+    background-color: #fff;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    border-radius: 4px;
+    box-shadow: 3px 3px 15px rgb(0 0 0 / 30%);
+}
+
+.wpc-alt-admin-menu {
+    margin: 0;
+    border-radius: 4px;
+    overflow: hidden;
+    float: right;
+}
+
+.wpc-admin-submenu {
+    position: absolute;
+    z-index: 9999;
+    background: #fff;
+    box-shadow: 3px 5px 10px rgb(0 0 0 / 10%);
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    margin-top: 5px;
+    margin-left: -5px;
+}
+
+.wpc-admin-submenu li:hover a {
+    color: #fcd46c;
+}
+
+.wpc-admin-submenu li a {
+    color: #59296b;
+}
+
+.wpc-admin-submenu li {
+    margin-bottom: 0;
+}
+
+.wpc-admin-submenu li:last-of-type {
+    border: 0;
+}
+
+.wpc-admin-menu-item-active {
+    background-color: #59296b !important;
+}
+
+.wpc-admin-menu-item-active>a, .wpc-admin-menu-item-active>span {
+    color: #fff !important;
+}
+
+/*
+** Lessons and Modules
+*/
+
+.ui-sortable-handle, .wpc-order-lesson-list-lesson {
+    cursor: grab;
+}
+
+#wpc-sort-lessons-table td {
+    vertical-align: middle;
+}
+
+#wpc-module-name {
+    width: calc(100% - 22px);
+}
+
+.wpc-module-button {
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+}
+
+.wpc-module-button input[type="text"] {
+    border: 0;
+    border-bottom: 1px dotted gray;
+    border-radius: 0;
+    background: transparent;
+    font-weight: bold;
+    max-width: 160px;
+}
+
+.wpc-delete-module {
+    float: right;
+}
+
+.lesson-list td .wp-menu-image:before{
+    color:rgba(0,0,0,0.5) !important;
+    float:left;
+}
+
+.wpc-order-lesson-list-module {
+    background-color: #009ee5 !important;
+}
+
+.wpc-order-lesson-list-module label {
+    color: white !important;
+}
+
+.card .lesson-list li, .card .course-list li{
+    border: 1px solid lightgray;
+    padding: 5px;
+    margin-bottom: 5px;
+    background:white;
+    cursor: pointer;
+}
+
+.category-list li, .course-list-buttons li{
+    display: inline-block;
+    margin: 5px 5px 5px 0 !important;
+}
+
+/*
+* Meta Box
+*/
+
+#wpc-lesson-restriction-overlay {
+    height: 100%;
+    width: calc(100% - 20px);
+    color: white;
+    background: rgba(255, 0, 42, 0.9);;
+    color: white;
+    text-align: middle;
+    position:absolute;
+    top:0;
+    left:0;
+    padding: 10px;
+    border: 1px solid darkred;
+    text-shadow: 1px 1px 2px darkred;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/*
+* Light Box
+*/
+
+.wpc-lightbox-container {
+    position: fixed;
+    background: rgba(0,0,0,0.3);
+    width: 80%;
+    padding: 10%;
+    height: 80%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}   
+
+.wpc-lightbox {
+    position: relative;
+    font-size: 16px;
+    border-radius: 4px;
+    background: white;
+    padding: 40px;
+}
+
+.wpc-lightbox-close {
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    top: 0px;
+    right: 0px;
+    float: right;
+    width: 26px;
+    height: 26px;
+    background-color: #e0e0e0;
+    color: #565656;
+    font-size: 24px;
+    text-align: center;
+    border-bottom-left-radius: 4px;
+}
+
+/*
+** DataTables
+*/
+
+table.dataTable tbody th, table.dataTable tbody td {
+    padding: 20px;
+}
+
+.dataTables_wrapper .dataTables_length select {
+    -webkit-appearance: auto; 
+    background: none;
+}
+
+.dataTables_wrapper .dataTables_filter input {
+    line-height: 1em;
+}
+
+.dataTables_wrapper {
+    margin-bottom: 20px;
+}
+
+table.dataTable thead th {
+    padding: 10px !important;
+}
+
+.dataTables_filter {
+    margin-bottom: 10px;
+}
+
+.dataTable .odd {
+    background-color: #f9f9f9;
+}
+
+.dataTable .wpc-progress-bar {
+    margin: 0;
+}
+
+/*
+** Inputs
+*/
+
+.wpc-question-btn {
+    padding: 0 6px 1px !important;
+    line-height: 18px !important;
+    height: 20px !important;
+    font-size: 10px;
+    margin: 0 5px 5px 0 !important;
+    min-height: 0 !important;
+}
+
+.wpc-question {
+    cursor: pointer;
+}
+
+.info-button{
+    float:left;
+    margin-right:3px !important;
+    margin-bottom:10px !important;
+    clear:right;
+}
+
+/*
+** Options
+*/
+
+.wpc-spacing-wrapper {
+    padding: 5px;
+    display: inline-block;
+    width: calc(25% - 4px);
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.wpc-spacing-wrapper label {
+    text-align: center;
+    display: block;
+}
+
+.wpc-spacing-input {
+    width: 100%;
+}
+
+.wpc-option-row {
+    border-bottom: 1px solid lightgray;
+    margin: 0 -20px 0 -20px;
+    padding: 20px 40px 40px;
+}
+
+.postbox .wpc-option-row {
+    margin: 0 -12px 0 -12px;
+}
+
+.wpc-option-row:last-of-type {
+    margin-bottom: -20px;
+    border-bottom: 0;
+}
+
+.postbox .wpc-option-row:last-of-type {
+    margin-bottom: 0;
+}
+
+.wpc-option-row .wpc-option-toggle {
+    float: right;
+}
+
+.wpc-option-row .wpc-wide-input {
+    width: calc(100% - 1px);
+    margin-top: 0;
+}
+
+#wp-wpc_logged_out_message-wrap, .wpc-color-picker-options-wrapper {
+    margin-top: 20px;
+}
+
+.wpc-admin-options-menu {
+    margin-bottom: 30px;
+    padding: 0;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.wpc-admin-options-menu ul {
+    margin: 0;
+}
+
+.wpc-admin-options-menu li {
+    margin: 0;
+    width: 100%;
+    padding: 20px;
+    color: white;
+    background: #59296B;
+    font-size: 16px;
+    cursor: pointer;
+    box-sizing: border-box;
+    border-bottom: 1px solid #f0f0f1;
+}
+
+.wpc-admin-options-menu li:hover {
+    color: #fbd46c;
+}
+
+.wpc-admin-options-menu li:last-of-type {
+    border: 0;
+}
+
+.wpc-option {
+    margin-bottom: 10px;
+}
+
+.wpc-option-toggle {
+    margin-top: 1em;
+}
+
+.wpc-options-header {
+    margin: -20px -20px 20px -20px;
+    padding: 20px;
+    background: #ececec;
+    border-bottom: 1px solid lightgray;
+}
+
+/*
+** Buttons
+*/
+
+.button.small{
+    padding:0 4px 1px;
+}
+
+.wpc-admin-button {
+    color: white;
+    padding: 6px 12px;
+    background: #e21772;
+    display: inline-block;
+    border-radius: 100px;
+    text-decoration: none;
+    cursor: pointer;
+    border: 0;
+}
+
+.wpc-admin-button-alt {
+    background-color: #89D6E2;
+    color: #59296b;
+}
+
+.wpc-admin-button:hover {
+    background-color: #fcd46c;
+    color: #fff;
+}
+
+.wpc-admin-button-lg {
+    font-size: 18px;
+    padding: 12px 24px;
+}
+
+/*
+** Toolbar
+*/
+
+.wpc-admin-box-toolbar {
+    padding: 20px 20px;
+    background: #eeeeef;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+
+.wpc-admin-box-toolbar .tablenav {
+    margin: 0;
+    padding: 0;
+}
+
+.wpc-admin-toolbar {
+    background: #f5f5f5;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.wpc-metabox-toolbar {
+    margin: -6px -12px 10px;
+    overflow: hidden;
+}
+
+/*
+** Toggle Switch
+*/
+
+.wpc-switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+
+.wpc-switch input {
+  display:none;
+}
+
+.wpc-slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+
+.wpc-slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 26px;
+}
+
+input:checked + .wpc-slider {
+  background-color: #24d19f;
+}
+
+input:checked + .wpc-slider:before {
+  transform: translateX(26px);
+}
+
+.wpc-slider.wpc-round {
+  border-radius: 34px;
+}
+
+.wpc-slider.wpc-round:before {
+  border-radius: 50%;
+}
+
+.wpc-switch + label {
+    cursor: default;
+    color: #4e4e4e;
+}
+
+.wpc-switch {
+    color: #4e4e4e;
+}
